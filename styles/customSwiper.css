@@ -1,0 +1,20 @@
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 40px;
+  height: 4px;
+  border-radius: 0;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 150ms ease-in;
+}
+.swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--main-color);
+  height: 8px;
+}
