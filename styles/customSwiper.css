@@ -2,14 +2,14 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   width: 40px;
-  height: 4px;
+  height: 6px;
   border-radius: 0;
   text-align: center;
   line-height: 20px;
   font-size: 12px;
   color: #fff;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   transition: all 150ms ease-in;
 }
 .swiper-horizontal
@@ -17,4 +17,59 @@
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: var(--main-color);
   height: 8px;
+}
+section.swipper-container {
+  height: 40rem;
+}
+
+section.swipper-container img {
+  min-height: 100%;
+  object-fit: cover;
+}
+.brand
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0px;
+}
+
+.brand .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+  padding-bottom: 40px;
+}
+.brand
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+  .swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.4);
+  transition: all 150ms ease-in;
+}
+
+.brand
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--main-color);
+  height: 8px;
+}
+
+nav.main-menu a {
+  transition: all 150ms ease-in;
+}
+
+nav.main-menu a.active {
+  color: var(--main-color);
+}
+
+nav.main-menu a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background-color: var(--main-color);
+  height: 4px;
+  width: 0px;
+  transition: all 150ms ease-in;
+}
+
+nav.main-menu a:hover::before {
+  width: 100%;
+}
+
+nav.main-menu a:hover {
+  color: var(--main-color);
 }
