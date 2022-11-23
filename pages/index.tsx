@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import BG1Logo from '../assets/image/bg1.jpg';
 import BG4Logo from '../assets/image/bg4.jpg';
 import BG5Logo from '../assets/image/bg5.jpg';
+import AppButton from '../components/Button';
 import MainCarousel from '../components/home/MainCarousel';
 import OurPartners from '../components/home/OurPartners';
 import Services from '../components/home/Services';
@@ -15,13 +16,6 @@ import Header from '../components/layout/Header';
 import Article from '../components/news/Article';
 
 export default function Home() {
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index: number, className: string) {
-      return '<span class="' + className + '"></span>';
-    },
-  };
-
   return (
     <div className='w-full bg-gray-100'>
       <Head>
@@ -33,7 +27,7 @@ export default function Home() {
       <main>
         <MainCarousel />
         <section className='grid grid-cols-3 container mx-auto mt-24 gap-8'>
-          <article className='rounded-2xl'>
+          <article className='rounded-2xl overflow-hidden'>
             <Image
               className='rounded-2xl h-full object-cover'
               src={BG1Logo}
@@ -94,21 +88,9 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <Link
-              className='bg-gray-700 text-white flex items-center gap-2 truncate w-min rounded px-4 py-4 mt-4 font-semibold'
-              href='/'
-            >
-              <span>Read more</span>
-              <div className='w-4 h-4'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='white'
-                  viewBox='0 0 448 512'
-                >
-                  <path d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z' />
-                </svg>
-              </div>
-            </Link>
+            <div className='flex mt-4'>
+              <AppButton text='Read more' type='dark' />
+            </div>
           </article>
         </section>
         <Services />
@@ -116,7 +98,7 @@ export default function Home() {
           <h2 className='text-center font-bold text-4xl mb-4 text-gray-700'>
             Recent Articles
           </h2>
-          <div className='grid grid-cols-3 gap-4'>
+          <div className='grid grid-cols-3 gap-8'>
             <Article
               author='Jorge Garreth'
               date='1/11/2000'

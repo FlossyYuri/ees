@@ -9,8 +9,7 @@ import BG6Logo from '../assets/image/bg6.jpg';
 export const CAROUSEL_ITEMS: CarouselItemProps[] = [
   {
     image: BG1Logo,
-    title: `Providing Value To Our ClientsThrough Ongoing Product &
-    Innovation.`,
+    title: `Iluminamos e desenvolvemos Moçambique.`,
     subtitle: `A world wide distributor of solar supplies and
     knowledgeable service`,
     box: {

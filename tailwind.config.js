@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    transitionDuration: {
+      DEFAULT: '300ms'
+    },
     container: {
       screens: {
         xl: '1170px',
@@ -17,7 +20,11 @@ module.exports = {
         'main': '#EC7644',
         'darker': '#212121',
       },
-
+      transitionProperty: {
+        'height': 'height',
+        'width': 'width',
+        'spacing': 'margin, padding',
+      }
     },
   },
   plugins: [],

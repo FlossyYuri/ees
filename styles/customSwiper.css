@@ -31,6 +31,10 @@ section.swipper-container img {
   bottom: 0px;
 }
 
+.services .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
+  padding-bottom: 40px;
+}
+
 .brand .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
   padding-bottom: 40px;
 }
@@ -72,4 +76,41 @@ nav.main-menu a:hover::before {
 
 nav.main-menu a:hover {
   color: var(--main-color);
+}
+
+.carousel-card::before {
+  content: '';
+  width: 75%;
+  height: 5px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  transition: all 150ms ease-in;
+}
+
+.carousel-card:hover::before {
+  height: 10px;
+}
+
+img {
+  transition: all 500ms ease-in;
+  transform: scale(1);
+}
+img:hover {
+  transform: scale(1.1);
+}
+
+article.news-articles::before {
+  content: '';
+  width: 80%;
+  height: 4px;
+  background-color: #e2e2e2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: all 150ms ease-in;
+}
+article.news-articles:hover::before {
+  height: 10px;
+  background-color: var(--main-color);
 }

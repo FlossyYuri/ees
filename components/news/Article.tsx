@@ -19,16 +19,16 @@ export default function Article({
   message,
 }: ArticleProps) {
   return (
-    <article className='rounded-lg shadow-xl pb-8'>
-      <div className='flex pr-12'>
+    <article className='rounded-lg shadow-xl pb-8 news-articles relative overflow-hidden'>
+      <div className='flex mr-12 rounded-br-xl overflow-hidden'>
         <Image
-          className='z-0 rounded-br-xl h-80 object-cover'
+          className='rounded-br-xl h-80 object-cover'
           src={image}
           alt='alt'
         />
       </div>
-      <div className='px-8 z-20'>
-        <span className='block w-min truncate p-2 my-4 bg-main rounded-lg text-white text-xs'>
+      <div className='px-8'>
+        <span className='relative block w-min truncate p-2 z-20 -mt-4 mb-4 bg-main rounded-lg text-white text-xs'>
           {tag}
         </span>
         <h3 className='font-semibold text-lg mb-2'>{title}</h3>

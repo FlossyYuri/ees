@@ -1,18 +1,29 @@
 import Image from 'next/image';
+import { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import AppButton from '../Button';
 import CircleButton from '../CircleButton';
 import BG3Logo from '../../assets/image/bg3.jpg';
+import ServiceItem from './ServiceItem';
 
 export default function Services() {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index: number, className: string) {
+      return '<span class="' + className + '"></span>';
+    },
+  };
   return (
-    <section className='my-16 bg-gray-700 text-white py-16'>
+    <section className='my-16 bg-gray-700 text-white py-16 services'>
       <div className='container grid grid-cols-2 gap-4 mx-auto'>
         <article>
-          <h3> Sustainable, Reliable & Affordable Energy!</h3>
-          <h2>
+          <h3 className='text-main font-semibold'>
+            Sustainable, Reliable & Affordable Energy!
+          </h3>
+          <h2 className='font-bold text-4xl mb-8 max-w-sm'>
             Providing Value To Our ClientsThrough Ongoing Product & Innovation.
           </h2>
         </article>
@@ -31,16 +42,62 @@ export default function Services() {
           </div>
         </article>
       </div>
-      <div className='container mx-auto grid grid-cols-4'>
-        <article className='bg-white text-gray-700 text-center rounded-lg p-8 flex flex-col items-center'>
-          <Image height={60} src={BG3Logo} alt='Service 1' />
-          <h3 className='font-semibold text-xl my-4'>Save your money</h3>
-          <p className='text-gray-500 mb-4'>
-            Save money on utilities or increase the value of your home by
-            installing solar panels as a great option.
-          </p>
-          <CircleButton href='/' />
-        </article>
+      <div className='container mx-auto mt-16'>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={30}
+          pagination={pagination}
+          modules={[Pagination, Navigation]}
+        >
+          <SwiperSlide>
+            <ServiceItem
+              image={BG3Logo}
+              title='Solar Home Systems'
+              content='Save money on utilities or increase the value of your home by
+                installing solar panels as a great option.'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServiceItem
+              image={BG3Logo}
+              title='Bombas Solares'
+              content='Save money on utilities or increase the value of your home by
+                installing solar panels as a great option.'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServiceItem
+              image={BG3Logo}
+              title='Camâras de frio'
+              content='Save money on utilities or increase the value of your home by
+                installing solar panels as a great option.'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServiceItem
+              image={BG3Logo}
+              title='Soluções energéticas'
+              content='Save money on utilities or increase the value of your home by
+                installing solar panels as a great option.'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServiceItem
+              image={BG3Logo}
+              title='Motas eléctricas'
+              content='Save money on utilities or increase the value of your home by
+                installing solar panels as a great option.'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ServiceItem
+              image={BG3Logo}
+              title='desenvolvimento de projectos'
+              content='Save money on utilities or increase the value of your home by
+                installing solar panels as a great option.'
+            />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );
