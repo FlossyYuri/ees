@@ -22,6 +22,7 @@
     "flowbite-react": "^0.3.5",
     "next": "13.0.2",
     "react": "18.2.0",
+    "react-countup": "^6.4.0",
     "react-dom": "18.2.0",
     "react-reveal": "^1.2.2",
     "swiper": "^8.4.4",
