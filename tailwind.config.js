@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './app/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     transitionDuration: {
-      DEFAULT: '300ms'
+      DEFAULT: '300ms',
     },
     container: {
       screens: {
@@ -17,15 +17,15 @@ module.exports = {
     },
     extend: {
       colors: {
-        'main': '#EC7644',
-        'darker': '#212121',
+        main: '#EC7644',
+        darker: '#212121',
       },
       transitionProperty: {
-        'height': 'height',
-        'width': 'width',
-        'spacing': 'margin, padding',
-      }
+        height: 'height',
+        width: 'width',
+        spacing: 'margin, padding',
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [require('flowbite/plugin')],
+};
