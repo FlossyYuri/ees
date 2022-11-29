@@ -129,21 +129,12 @@ export default function Footer() {
               </a>
             </div>
           </article>
-          <article className='flex gap-4 justify-end'>
-            <Image
-              className='object-contain'
-              src={FooterMouse}
-              alt='Footer mouse'
-            />
-            <div className='flex flex-col max-w-xs'></div>
-          </article>
         </section>
         <div className='flex flex-wrap gap-4 justify-between'>
-          <div className='text-white'>@2021 Energy</div>
+          <div className='text-white'>@Epsilon Energia Solar</div>
           <div className='flex gap-4'>
             <div>Facebook</div>
             <div>Twitter</div>
-            <div>Facebook</div>
           </div>
         </div>
       </div>
