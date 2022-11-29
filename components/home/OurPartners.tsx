@@ -10,6 +10,9 @@ import PartnerLogo3 from '../../assets/image/partners/Client-03.png';
 import PartnerLogo4 from '../../assets/image/partners/Client-04.png';
 import PartnerLogo5 from '../../assets/image/partners/Client-05.png';
 import PartnerLogo6 from '../../assets/image/partners/Client-06.png';
+import PartnerLogo7 from '../../assets/image/partners/Client-07.png';
+import PartnerLogo8 from '../../assets/image/partners/Client-08.png';
+import PartnerLogo9 from '../../assets/image/partners/Client-09.png';
 
 export default function OurPartners() {
   const pagination = {
@@ -52,13 +55,13 @@ export default function OurPartners() {
           <Image height={48} src={PartnerLogo6} alt='logo' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo4} alt='logo' />
+          <Image height={48} src={PartnerLogo7} alt='logo' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo5} alt='logo' />
+          <Image height={48} src={PartnerLogo8} alt='logo' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo6} alt='logo' />
+          <Image height={48} src={PartnerLogo9} alt='logo' />
         </SwiperSlide>
       </Swiper>
     </section>
