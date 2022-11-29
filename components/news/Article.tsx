@@ -22,7 +22,7 @@ export default function Article({
     <article className='rounded-lg shadow-xl pb-8 news-articles relative overflow-hidden'>
       <div className='flex mr-12 rounded-br-xl overflow-hidden'>
         <Image
-          className='rounded-br-xl h-80 object-cover'
+          className='rounded-br-xl h-48 md:h-80 object-cover'
           src={image}
           alt='alt'
         />

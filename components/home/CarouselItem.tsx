@@ -30,14 +30,14 @@ export default function CarouselItem({
   return (
     <>
       <Image src={image} alt='BG1' />
-      <article className='absolute h-full w-full p-24'>
-        <section className='grid grid-cols-2 gap-4'>
-          <article className='text-white flex flex-col items-start gap-4'>
-            <h2 className='text-6xl font-bold'>{title}</h2>
+      <article className='absolute h-full w-full p-4 md:p-24 text-center md:text-left'>
+        <section className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <article className='text-white flex flex-col items-center md:items-start gap-4'>
+            <h2 className='text-4xl md:text-6xl font-bold'>{title}</h2>
             <h3 className='text-lg font-bold'>{subtitle}</h3>
             <AppButton text='Our Services' />
           </article>
-          <article className='text-darker mx-auto'>
+          <article className='text-darker mx-auto hidden md:block'>
             <div className='bg-white rounded-lg p-8 flex flex-col items-center relative carousel-card max-w-xs'>
               <Image height={84} src={box.image} alt='BG1' />
               <h2 className='text-xl my-4 font-bold'>{box.title}</h2>

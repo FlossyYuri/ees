@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -26,7 +25,7 @@ export default function Home() {
       <Header />
       <main>
         <MainCarousel />
-        <section className='grid grid-cols-3 container mx-auto mt-24 gap-8'>
+        <section className='grid grid-cols-1 md:grid-cols-3 container mx-auto mt-24 gap-8'>
           <article className='rounded-2xl overflow-hidden'>
             <Image
               className='rounded-2xl h-full object-cover'
@@ -35,13 +34,13 @@ export default function Home() {
             />
           </article>
           <article className='col-span-2 flex flex-col'>
-            <span className='flex px-4 py-1 bg-main rounded-lg truncate w-min text-white'>
+            <span className='flex px-4 py-1 bg-main rounded-lg md:truncate md:w-min text-white'>
               Complete Commercial And Residential Solar Systems
             </span>
             <h2 className='font-bold text-4xl mt-2 mb-4 text-gray-700'>
               We Are Pioneers In The World Of Solar & Renewable Energy!
             </h2>
-            <div className='mt-6 grid grid-cols-2 gap-4'>
+            <div className='mt-6 grid grid-cols-1 md:grid-cols-2 gap-4'>
               <div>
                 <p className='text-gray-800 font-semibold'>
                   We drive the transition to more sustainable, reliable &
@@ -94,11 +93,11 @@ export default function Home() {
           </article>
         </section>
         <Services />
-        <section className='container mx-auto mt-24'>
+        <section className='container mx-auto mt-24 p-4 md:p-0'>
           <h2 className='text-center font-bold text-4xl mb-4 text-gray-700'>
             Recent Articles
           </h2>
-          <div className='grid grid-cols-3 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             <Article
               author='Jorge Garreth'
               date='1/11/2000'
@@ -125,7 +124,7 @@ export default function Home() {
         </section>
         <OurPartners />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

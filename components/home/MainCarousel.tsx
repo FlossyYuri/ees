@@ -15,7 +15,7 @@ export default function MainCarousel() {
   };
 
   return (
-    <section className='swipper-container'>
+    <section className='swipper-container-sm swipper-container'>
       <Swiper
         pagination={pagination}
         navigation={true}
