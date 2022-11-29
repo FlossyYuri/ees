@@ -18,7 +18,7 @@ export default function Services() {
   };
   return (
     <section className='my-16 bg-gray-700 text-white py-16 services'>
-      <div className='container grid grid-cols-2 gap-4 mx-auto'>
+      <div className='container grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto'>
         <article>
           <h3 className='text-main font-semibold'>
             Sustainable, Reliable & Affordable Energy!
@@ -44,7 +44,22 @@ export default function Services() {
       </div>
       <div className='container mx-auto mt-16'>
         <Swiper
-          slidesPerView={4}
+          slidesPerView={1}
+          centeredSlides={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
           spaceBetween={30}
           pagination={pagination}
           modules={[Pagination, Navigation]}

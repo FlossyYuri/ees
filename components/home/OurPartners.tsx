@@ -27,9 +27,23 @@ export default function OurPartners() {
         Our partners
       </h2>
       <Swiper
-        slidesPerView={6}
-        centeredSlides={false}
-        slidesPerGroup={3}
+        slidesPerView='auto'
+        centeredSlides={true}
+        slidesPerGroup={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 6,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 6,
+            spaceBetween: 50,
+          },
+        }}
         spaceBetween={30}
         grabCursor={true}
         loop
@@ -37,31 +51,31 @@ export default function OurPartners() {
         modules={[Pagination, Navigation]}
       >
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo1} alt='logo' />
+          <Image height={48} src={PartnerLogo1} alt='logo 1' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo2} alt='logo' />
+          <Image height={48} src={PartnerLogo2} alt='logo 2' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo3} alt='logo' />
+          <Image height={48} src={PartnerLogo3} alt='logo 3' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo4} alt='logo' />
+          <Image height={48} src={PartnerLogo4} alt='logo 4' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo5} alt='logo' />
+          <Image height={48} src={PartnerLogo5} alt='logo 5' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo6} alt='logo' />
+          <Image height={48} src={PartnerLogo6} alt='logo 6' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo7} alt='logo' />
+          <Image height={48} src={PartnerLogo7} alt='logo 7' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo8} alt='logo' />
+          <Image height={48} src={PartnerLogo8} alt='logo 8' />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo9} alt='logo' />
+          <Image height={48} src={PartnerLogo9} alt='logo 9' />
         </SwiperSlide>
       </Swiper>
     </section>

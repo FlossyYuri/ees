@@ -12,7 +12,7 @@ export default function NavLink({ text, to }: NavLinkProps) {
     <li>
       <Link
         href={to}
-        className={`block h-full relative py-6 ${
+        className={`block h-full relative py-2 md:py-6 ${
           router.pathname == to ? 'active' : ''
         }`}
       >
