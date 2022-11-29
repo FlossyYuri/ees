@@ -20,6 +20,10 @@ export default function Home() {
       <Head>
         <title>EES</title>
         <meta name='description' content='Solar energy' />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1'
+        ></meta>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
@@ -124,7 +128,7 @@ export default function Home() {
         </section>
         <OurPartners />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

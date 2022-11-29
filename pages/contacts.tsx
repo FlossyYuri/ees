@@ -1,20 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
+import CountUp from 'react-countup';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import BG1Logo from '../assets/image/bg1.jpg';
-import BG4Logo from '../assets/image/bg4.jpg';
 import BG5Logo from '../assets/image/bg5.jpg';
-import AppButton from '../components/Button';
-import MainCarousel from '../components/home/MainCarousel';
-import OurPartners from '../components/home/OurPartners';
-import Services from '../components/home/Services';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
-import Article from '../components/news/Article';
-import CountUp from 'react-countup';
 
 export default function Home() {
   return (
@@ -51,12 +44,14 @@ export default function Home() {
                   fill='none'
                   stroke='currentColor'
                   viewBox='0 0 24 24'
-                  xmlns='http://www.w3.org/2000/svg'>
+                  xmlns='http://www.w3.org/2000/svg'
+                >
                   <path
                     stroke-linecap='round'
                     stroke-linejoin='round'
                     stroke-width='2'
-                    d='M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z'></path>
+                    d='M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z'
+                  ></path>
                 </svg>
                 <p className='ml-2'>Emergency Line +258 88 500 44 66</p>
               </div>
@@ -66,17 +61,20 @@ export default function Home() {
                   fill='none'
                   stroke='currentColor'
                   viewBox='0 0 24 24'
-                  xmlns='http://www.w3.org/2000/svg'>
+                  xmlns='http://www.w3.org/2000/svg'
+                >
                   <path
                     stroke-linecap='round'
                     stroke-linejoin='round'
                     stroke-width='2'
-                    d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'></path>
+                    d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
+                  ></path>
                   <path
                     stroke-linecap='round'
                     stroke-linejoin='round'
                     stroke-width='2'
-                    d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'></path>
+                    d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
+                  ></path>
                 </svg>
                 <p className='ml-2'>Location ABC DEFGH</p>
               </div>
@@ -85,11 +83,13 @@ export default function Home() {
                   className='w-6 h-6'
                   fill='currentColor'
                   viewBox='0 0 20 20'
-                  xmlns='http://www.w3.org/2000/svg'>
+                  xmlns='http://www.w3.org/2000/svg'
+                >
                   <path
                     fill-rule='evenodd'
                     d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z'
-                    clip-rule='evenodd'></path>
+                    clip-rule='evenodd'
+                  ></path>
                 </svg>{' '}
                 <p className='ml-2'>Location ABC DEFGH</p>
               </div>
@@ -97,18 +97,21 @@ export default function Home() {
               <div className='mt-8'>
                 <a
                   href='#'
-                  className='inline-flex items-center px-4 py-4 text-sm font-medium text-center transition-all delay-100 bg-white rounded-lg text-main hover:scale-95 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
+                  className='inline-flex items-center px-4 py-4 text-sm font-medium text-center transition-all delay-100 bg-white rounded-lg text-main hover:scale-95 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+                >
                   Contact Us
                   <svg
                     aria-hidden='true'
                     className='w-4 h-4 ml-2 -mr-1'
                     fill='currentColor'
                     viewBox='0 0 20 20'
-                    xmlns='http://www.w3.org/2000/svg'>
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
                     <path
                       fill-rule='evenodd'
                       d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
-                      clip-rule='evenodd'></path>
+                      clip-rule='evenodd'
+                    ></path>
                   </svg>
                 </a>
               </div>
@@ -128,13 +131,15 @@ export default function Home() {
                 <li>
                   <a
                     href='#'
-                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'
+                  >
                     <svg
                       aria-hidden='true'
                       className='h-4'
                       viewBox='0 0 40 38'
                       fill='none'
-                      xmlns='http://www.w3.org/2000/svg'>
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
                       <path
                         d='M39.0728 0L21.9092 12.6999L25.1009 5.21543L39.0728 0Z'
                         fill='#E17726'
@@ -263,13 +268,15 @@ export default function Home() {
                 <li>
                   <a
                     href='#'
-                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'
+                  >
                     <svg
                       aria-hidden='true'
                       className='h-5'
                       viewBox='0 0 292 292'
                       fill='none'
-                      xmlns='http://www.w3.org/2000/svg'>
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
                       <path
                         d='M145.7 291.66C226.146 291.66 291.36 226.446 291.36 146C291.36 65.5541 226.146 0.339844 145.7 0.339844C65.2542 0.339844 0.0400391 65.5541 0.0400391 146C0.0400391 226.446 65.2542 291.66 145.7 291.66Z'
                         fill='#3259A5'
@@ -287,18 +294,21 @@ export default function Home() {
                 <li>
                   <a
                     href='#'
-                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'
+                  >
                     <svg
                       aria-hidden='true'
                       className='h-5'
                       viewBox='0 0 75.591 75.591'
                       xmlns='http://www.w3.org/2000/svg'
-                      xmlnsXlink='http://www.w3.org/1999/xlink'>
+                      xmlnsXlink='http://www.w3.org/1999/xlink'
+                    >
                       <linearGradient
                         id='a'
                         gradientTransform='matrix(0 -54.944 -54.944 0 23.62 79.474)'
                         gradientUnits='userSpaceOnUse'
-                        x2='1'>
+                        x2='1'
+                      >
                         <stop offset='0' stop-color='#ff1b2d' />
                         <stop offset='.3' stop-color='#ff1b2d' />
                         <stop offset='.614' stop-color='#ff1b2d' />
@@ -308,7 +318,8 @@ export default function Home() {
                         id='b'
                         gradientTransform='matrix(0 -48.595 -48.595 0 37.854 76.235)'
                         gradientUnits='userSpaceOnUse'
-                        x2='1'>
+                        x2='1'
+                      >
                         <stop offset='0' stop-color='#9c0000' />
                         <stop offset='.7' stop-color='#ff4b4b' />
                         <stop offset='1' stop-color='#ff4b4b' />
@@ -332,14 +343,16 @@ export default function Home() {
                 <li>
                   <a
                     href='#'
-                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'
+                  >
                     <svg
                       aria-hidden='true'
                       className='h-5'
                       viewBox='0 0 512 512'
                       version='1.1'
                       xmlns='http://www.w3.org/2000/svg'
-                      xmlnsXlink='http://www.w3.org/1999/xlink'>
+                      xmlnsXlink='http://www.w3.org/1999/xlink'
+                    >
                       <defs>
                         <radialGradient
                           cx='0%'
@@ -347,7 +360,8 @@ export default function Home() {
                           fx='0%'
                           fy='50%'
                           r='100%'
-                          id='radialGradient-1'>
+                          id='radialGradient-1'
+                        >
                           <stop stop-color='#5D9DF6' offset='0%'></stop>
                           <stop stop-color='#006FFF' offset='100%'></stop>
                         </radialGradient>
@@ -357,7 +371,8 @@ export default function Home() {
                         stroke='none'
                         stroke-width='1'
                         fill='none'
-                        fill-rule='evenodd'>
+                        fill-rule='evenodd'
+                      >
                         <g id='logo'>
                           <rect
                             id='base'
@@ -366,12 +381,14 @@ export default function Home() {
                             y='0'
                             width='512'
                             height='512'
-                            rx='256'></rect>
+                            rx='256'
+                          ></rect>
                           <path
                             d='M169.209772,184.531136 C217.142772,137.600733 294.857519,137.600733 342.790517,184.531136 L348.559331,190.179285 C350.955981,192.525805 350.955981,196.330266 348.559331,198.676787 L328.82537,217.99798 C327.627045,219.171241 325.684176,219.171241 324.485851,217.99798 L316.547278,210.225455 C283.10802,177.485633 228.89227,177.485633 195.453011,210.225455 L186.951456,218.549188 C185.75313,219.722448 183.810261,219.722448 182.611937,218.549188 L162.877976,199.227995 C160.481326,196.881474 160.481326,193.077013 162.877976,190.730493 L169.209772,184.531136 Z M383.602212,224.489406 L401.165475,241.685365 C403.562113,244.031874 403.562127,247.836312 401.165506,250.182837 L321.971538,327.721548 C319.574905,330.068086 315.689168,330.068112 313.292501,327.721609 C313.292491,327.721599 313.29248,327.721588 313.29247,327.721578 L257.08541,272.690097 C256.486248,272.103467 255.514813,272.103467 254.915651,272.690097 C254.915647,272.690101 254.915644,272.690105 254.91564,272.690108 L198.709777,327.721548 C196.313151,330.068092 192.427413,330.068131 190.030739,327.721634 C190.030725,327.72162 190.03071,327.721606 190.030695,327.721591 L110.834524,250.181849 C108.437875,247.835329 108.437875,244.030868 110.834524,241.684348 L128.397819,224.488418 C130.794468,222.141898 134.680206,222.141898 137.076856,224.488418 L193.284734,279.520668 C193.883897,280.107298 194.85533,280.107298 195.454493,279.520668 C195.454502,279.520659 195.45451,279.520651 195.454519,279.520644 L251.65958,224.488418 C254.056175,222.141844 257.941913,222.141756 260.338618,224.488222 C260.338651,224.488255 260.338684,224.488288 260.338717,224.488321 L316.546521,279.520644 C317.145683,280.107273 318.117118,280.107273 318.71628,279.520644 L374.923175,224.489406 C377.319825,222.142885 381.205562,222.142885 383.602212,224.489406 Z'
                             id='WalletConnect'
                             fill='#FFFFFF'
-                            fill-rule='nonzero'></path>
+                            fill-rule='nonzero'
+                          ></path>
                         </g>
                       </g>
                     </svg>
@@ -383,13 +400,15 @@ export default function Home() {
                 <li>
                   <a
                     href='#'
-                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'>
+                    className='flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white'
+                  >
                     <svg
                       aria-hidden='true'
                       className='h-4'
                       viewBox='0 0 96 96'
                       fill='none'
-                      xmlns='http://www.w3.org/2000/svg'>
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
                       <path
                         d='M72.0998 0.600098H48.3998H24.5998H0.799805V24.4001V48.2001V49.7001V71.8001V71.9001V95.5001H24.5998V72.0001V71.9001V49.8001V48.3001V24.5001H48.3998H72.1998H95.9998V0.700104H72.0998V0.600098Z'
                         fill='#617BFF'
@@ -412,38 +431,35 @@ export default function Home() {
         */}
 
         <div className='flex items-center justify-center w-full'>
-          <div className='flex flex-col items-start justify-start w-full px-6 2xl:w-9/12'>
+          <div className='flex flex-col md:flex-row md:items-start md:justify-start px-6 2xl:w-9/12 md:gap-16'>
             {/* 
             COUNTER YEARS
              */}
-            <div className='w-full'>
-              <div className='inline-flex items-end justify-start'>
+            <div className='w-full max-w-xs mx-auto flex flex-col items-center'>
+              <div className='flex flex-col-reverse items-center  md:flex md:flex-row md:items-end'>
                 <CountUp duration={3} end={25} useEasing>
                   {({ countUpRef, start }) => (
                     <div>
                       <span
                         ref={countUpRef}
-                        className='font-light text-9xl text-main'
+                        className='font-light text-7xl md:text-9xl text-main'
                       />
                     </div>
                   )}
                 </CountUp>
                 <Image
-                  className='w-64 h-64 mb-4 ml-10 rounded-full cursor-pointer'
+                  className='w-44 h-44 rounded-full cursor-pointer'
                   src={BG1Logo}
                   alt='Rounded avatar'
                 />
               </div>
-              <p className='w-6/12 mt-6 ml-10 text-4xl font-medium'>
+              <p className=' md:mt-4 md:ml-6 text-2xl text-center md:text-left font-medium'>
                 Years Of Experience In The Solar Industry
               </p>
-              <div className='w-1/12 my-6 ml-10 border border-b-2 border-black'></div>
+              <div className='w-24 my-6 ml-10 border border-b-2 border-black'></div>
             </div>
 
-            {/* 
-            TESTIMONIALS
-             */}
-            <div className='mt-6 mb-16'>
+            <div className='mt-6 mb-16 flex-1'>
               <h5 className='my-6 font-bold text-main'>
                 Customers Doing it Their Way!
               </h5>
@@ -454,9 +470,9 @@ export default function Home() {
                 questions and they were patient. When my system arrived, it was
                 well packed.
               </p>
-              <div className='inline-flex mt-4'>
-                <div className='flex items-center space-x-4 cursor-pointer'>
-                  <div className='flex-shrink-0'>
+              <div className='flex flex-col md:flex-row mt-4 gap-4'>
+                <div className='flex items-center cursor-pointer'>
+                  <div className='flex-shrink-0 mr-2'>
                     <Image
                       className='w-10 h-10 rounded-full'
                       src={BG5Logo}
@@ -469,8 +485,8 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className='flex items-center ml-4 space-x-4 cursor-pointer'>
-                  <div className='flex-shrink-0'>
+                <div className='flex items-center cursor-pointer'>
+                  <div className='flex-shrink-0 mr-2'>
                     <Image
                       className='w-10 h-10 rounded-full'
                       src={BG5Logo}
@@ -483,8 +499,8 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className='flex items-center ml-4 space-x-4 cursor-pointer'>
-                  <div className='flex-shrink-0'>
+                <div className='flex items-center cursor-pointer'>
+                  <div className='flex-shrink-0 mr-2'>
                     <Image
                       className='w-10 h-10 rounded-full'
                       src={BG5Logo}

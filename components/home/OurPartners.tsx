@@ -27,8 +27,9 @@ export default function OurPartners() {
         Our partners
       </h2>
       <Swiper
-        slidesPerView={2}
+        slidesPerView='auto'
         centeredSlides={true}
+        slidesPerGroup={1}
         breakpoints={{
           640: {
             slidesPerView: 4,
@@ -43,7 +44,6 @@ export default function OurPartners() {
             spaceBetween: 50,
           },
         }}
-        slidesPerGroup={3}
         spaceBetween={30}
         grabCursor={true}
         loop
