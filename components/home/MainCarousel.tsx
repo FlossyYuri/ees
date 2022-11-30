@@ -5,8 +5,12 @@ import { CAROUSEL_ITEMS } from '../../data';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { useRouter } from 'next/router';
+import { en, pt } from '../../translations';
 
 export default function MainCarousel() {
+  const router = useRouter();
+  const t = router.locale === 'pt' ? pt : en;
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
@@ -23,10 +27,13 @@ export default function MainCarousel() {
         className='h-full'
       >
         <SwiperSlide className='flex items-center relative'>
-          <CarouselItem {...CAROUSEL_ITEMS[0]} />
+          <CarouselItem {...CAROUSEL_ITEMS(t)[0]} />
         </SwiperSlide>
         <SwiperSlide className='flex items-center relative'>
-          <CarouselItem {...CAROUSEL_ITEMS[1]} />
+          <CarouselItem {...CAROUSEL_ITEMS(t)[1]} />
+        </SwiperSlide>
+        <SwiperSlide className='flex items-center relative'>
+          <CarouselItem {...CAROUSEL_ITEMS(t)[2]} />
         </SwiperSlide>
       </Swiper>
     </section>

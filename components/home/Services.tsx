@@ -7,6 +7,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import AppButton from '../Button';
 import CircleButton from '../CircleButton';
 import BG3Logo from '../../assets/image/bg3.jpg';
+import ElectricLogo from '../../assets/image/home/electric-bike.png';
+import FridgeLogo from '../../assets/image/home/fridge.png';
+import PumpLogo from '../../assets/image/home/pump.png';
+import SolarEnergyLogo from '../../assets/image/home/solar-energy.png';
+import ProjectLogo from '../../assets/image/home/project.png';
+import SolarLogo from '../../assets/image/home/solar-panel.png';
 import ServiceItem from './ServiceItem';
 
 export default function Services() {
@@ -66,7 +72,7 @@ export default function Services() {
         >
           <SwiperSlide>
             <ServiceItem
-              image={BG3Logo}
+              image={SolarLogo}
               title='Solar Home Systems'
               content='Save money on utilities or increase the value of your home by
                 installing solar panels as a great option.'
@@ -74,7 +80,7 @@ export default function Services() {
           </SwiperSlide>
           <SwiperSlide>
             <ServiceItem
-              image={BG3Logo}
+              image={PumpLogo}
               title='Bombas Solares'
               content='Save money on utilities or increase the value of your home by
                 installing solar panels as a great option.'
@@ -82,7 +88,7 @@ export default function Services() {
           </SwiperSlide>
           <SwiperSlide>
             <ServiceItem
-              image={BG3Logo}
+              image={FridgeLogo}
               title='Camâras de frio'
               content='Save money on utilities or increase the value of your home by
                 installing solar panels as a great option.'
@@ -90,7 +96,7 @@ export default function Services() {
           </SwiperSlide>
           <SwiperSlide>
             <ServiceItem
-              image={BG3Logo}
+              image={SolarEnergyLogo}
               title='Soluções energéticas'
               content='Save money on utilities or increase the value of your home by
                 installing solar panels as a great option.'
@@ -98,7 +104,7 @@ export default function Services() {
           </SwiperSlide>
           <SwiperSlide>
             <ServiceItem
-              image={BG3Logo}
+              image={ElectricLogo}
               title='Motas eléctricas'
               content='Save money on utilities or increase the value of your home by
                 installing solar panels as a great option.'
@@ -106,7 +112,7 @@ export default function Services() {
           </SwiperSlide>
           <SwiperSlide>
             <ServiceItem
-              image={BG3Logo}
+              image={ProjectLogo}
               title='desenvolvimento de projectos'
               content='Save money on utilities or increase the value of your home by
                 installing solar panels as a great option.'

@@ -39,7 +39,12 @@ export default function CarouselItem({
           </article>
           <article className='text-darker mx-auto hidden md:block'>
             <div className='bg-white rounded-lg p-8 flex flex-col items-center relative carousel-card max-w-xs'>
-              <Image height={84} src={box.image} alt='BG1' />
+              <Image
+                className='filter brightness-0'
+                height={84}
+                src={box.image}
+                alt='BG1'
+              />
               <h2 className='text-xl my-4 font-bold'>{box.title}</h2>
               <p className='text-center text-gray-400 mb-4'>{box.text}</p>
               <CircleButton href='/' />

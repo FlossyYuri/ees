@@ -29,10 +29,9 @@ export default function OurPartners() {
       <Swiper
         slidesPerView='auto'
         centeredSlides={true}
-        slidesPerGroup={1}
         breakpoints={{
           640: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
@@ -51,31 +50,67 @@ export default function OurPartners() {
         modules={[Pagination, Navigation]}
       >
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo1} alt='logo 1' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo1}
+            alt='logo 1'
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo2} alt='logo 2' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo2}
+            alt='logo 2'
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo3} alt='logo 3' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo3}
+            alt='logo 3'
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo4} alt='logo 4' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo4}
+            alt='logo 4'
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo5} alt='logo 5' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo5}
+            alt='logo 5'
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo6} alt='logo 6' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo6}
+            alt='logo 6'
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo7} alt='logo 7' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo7}
+            alt='logo 7'
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo8} alt='logo 8' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo8}
+            alt='logo 8'
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image height={48} src={PartnerLogo9} alt='logo 9' />
+          <Image
+            className='h-24 object-contain md:h-12'
+            src={PartnerLogo9}
+            alt='logo 9'
+          />
         </SwiperSlide>
       </Swiper>
     </section>

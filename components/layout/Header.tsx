@@ -58,7 +58,7 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className='flex items-center mr-8'>
+      <div className='flex items-center mr-2 lg:mr-8'>
         <button
           className='p-2 flex gap-4 items-center'
           onClick={handleLanguageToggle}
@@ -70,7 +70,9 @@ export default function Header() {
             src={router.locale === 'pt' ? MozambiqueLogo : UsLogo}
             alt='Locale language icon'
           />
-          <span>{router.locale === 'en' ? 'English' : 'Português'}</span>
+          <span className='hidden md:flex'>
+            {router.locale === 'en' ? 'English' : 'Português'}
+          </span>
         </button>
       </div>
       <div className='flex items-center p-4 z-50 md:hidden'>
