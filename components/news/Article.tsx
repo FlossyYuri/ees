@@ -28,7 +28,7 @@ export default function Article({
         />
       </div>
       <div className='px-8'>
-        <span className='relative block w-min truncate p-2 z-20 -mt-4 mb-4 bg-main rounded-lg text-white text-xs'>
+        <span className='relative block w-min p-2 truncate z-20 -mt-4 mb-4 bg-main rounded-lg text-white text-xs'>
           {tag}
         </span>
         <h3 className='font-semibold text-lg mb-2'>{title}</h3>
@@ -39,7 +39,7 @@ export default function Article({
         <p className='text-gray-500'>{message}</p>
         <Link
           className='border-2 border-gray-500 flex items-center gap-2 truncate w-min rounded px-4 py-2 mt-4'
-          href='/'
+          href='/news/1'
         >
           <span>Read more</span>
           <div className='w-5 h-5'>
