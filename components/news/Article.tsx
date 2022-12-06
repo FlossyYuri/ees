@@ -3,28 +3,32 @@ import Link from 'next/link';
 
 export interface ArticleProps {
   image: string | StaticImageData;
-  tag: string;
+  tag?: string;
   title: string;
-  date: string;
+  createdAt: string;
   author: string;
-  message: string;
+  description: string;
+  _id?: string;
 }
 
 export default function Article({
   image,
+  _id,
   tag,
   title,
   author,
-  date,
-  message,
+  createdAt,
+  description,
 }: ArticleProps) {
   return (
     <article className='rounded-lg shadow-xl pb-8 news-articles relative overflow-hidden'>
-      <div className='flex mr-12 rounded-br-xl overflow-hidden'>
+      <div className='flex mr-12 h-48 md:h-80 rounded-br-xl overflow-hidden'>
         <Image
-          className='rounded-br-xl h-48 md:h-80 object-cover'
+          className='rounded-br-xl h-full w-full object-cover'
           src={image}
           alt='alt'
+          height={1000}
+          width={1000}
         />
       </div>
       <div className='px-8'>
@@ -33,13 +37,13 @@ export default function Article({
         </span>
         <h3 className='font-semibold text-lg mb-2'>{title}</h3>
         <div className='flex text-xs mb-2 text-gray-600 justify-between'>
-          <span>{date}</span>
+          <span>{createdAt}</span>
           <span>{author}</span>
         </div>
-        <p className='text-gray-500'>{message}</p>
+        <p className='text-gray-500'>{description}</p>
         <Link
           className='border-2 border-gray-500 flex items-center gap-2 truncate w-min rounded px-4 py-2 mt-4'
-          href='/news/1'
+          href={`/news/${_id}`}
         >
           <span>Read more</span>
           <div className='w-5 h-5'>

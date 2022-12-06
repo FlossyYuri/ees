@@ -10,29 +10,27 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import Input from '../../components/forms/input';
 import FileInput from '../../components/forms/FileInput';
 import { APIKit, uploadFile } from '../../service';
+import { useRouter } from 'next/router';
 
-type Inputs = {
+type CreateArticle = {
   title: string;
   image: string;
-  date: Date;
   author: string;
   description: any;
 };
 export default function Create() {
+  const router = useRouter();
   const [document, setDocument] = useState<any>(null);
+  const [loading, setLoading] = useState<boolean>(false);
   const {
     register,
     setValue,
     getValues,
     handleSubmit,
     formState: { errors },
-  } = useForm<Inputs>({
-    defaultValues: {
-      date: new Date(),
-    },
-  });
-  const onSubmit: SubmitHandler<Inputs> = async (values) => {
-    console.log(values);
+  } = useForm<CreateArticle>();
+  const onSubmit: SubmitHandler<CreateArticle> = async (values) => {
+    setLoading(true);
     try {
       if (document) {
         const toastID = toast.loading('Carregando Imagem.');
@@ -41,16 +39,20 @@ export default function Create() {
         toast.dismiss(toastID);
       }
       const toastID = toast.loading('Enviando Dados!');
-      APIKit.post('/clientes', values)
-        .then(() => {
-          toast.success('Empresa cadastrada com sucesso!');
+      APIKit.post('/articles', values)
+        .then((response) => {
+          toast.success('Notícia cadastrada com sucesso!');
+          router.push(`/news/${response.data.data._id}`);
         })
         .catch(() => {
-          toast.error('Ocorreu um erro ao cadastrar a empresa!');
+          toast.error('Ocorreu um erro ao cadastrar a notícia!');
         })
-        .finally(() => toast.dismiss(toastID));
+        .finally(() => {
+          toast.dismiss(toastID);
+          setLoading(false);
+        });
     } catch (err) {
-      toast.error('Ups, ocorreu um erro ao submeter a empresa!');
+      toast.error('Ups, ocorreu um erro ao submeter a notícia!');
     }
   };
   const changeDocument = (file: any) => {
@@ -107,7 +109,10 @@ export default function Create() {
           <MyEditor setValue={setValue} value={getValues().description} />
           <div className='mt-4'>
             <input
-              className='bg-slate-900 text-white px-6 py-2 rounded-lg'
+              disabled={loading}
+              className={`${
+                loading ? 'bg-slate-600' : 'bg-slate-900'
+              } text-white px-6 py-2 rounded-lg transition-all`}
               type='submit'
               value='Enviar notícia'
             />

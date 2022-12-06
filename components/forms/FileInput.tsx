@@ -1,12 +1,7 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
-import axios from 'axios';
+import { useState } from 'react';
 
 export const REQUEST_TIMEOUT = 90 * 1000;
-export const APIKit = axios.create({
-  baseURL: 'http://localhost:5000/',
-  timeout: REQUEST_TIMEOUT,
-});
 interface Props {
   name?: string;
   label?: string;

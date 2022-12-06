@@ -6,8 +6,13 @@ import Footer from '../../components/layout/Footer';
 import Header from '../../components/layout/Header';
 import BG1Logo from '../../assets/image/bg1.jpg';
 import Image from 'next/image';
+import { APIKit } from '../../service';
+import { ArticleProps } from '../../components/news/Article';
 
-export default function Home() {
+interface Props {
+  article: ArticleProps;
+}
+export default function News({ article }: Props) {
   return (
     <div className='w-full bg-gray-100'>
       <Head>
@@ -28,11 +33,11 @@ export default function Home() {
               className='w-3/4 bg-white text-gray-600 text-sm -mt-9 rounded-tr-lg
              py-2 px-8 flex items-center gap-4 flex-wrap'
             >
-              <span>December 22, 2020</span>
+              <span>{article.createdAt}</span>
               <span className='block w-min p-2 truncate z-20 bg-main rounded-lg text-white text-xs'>
                 Refined Products, Solar Modules
               </span>
-              <span>Martin King</span>
+              <span>{article.author}</span>
             </p>
             <div className='p-8'>
               <p className='text-gray-600 text-3xl mb-4 font-semibold'>
@@ -98,4 +103,22 @@ export default function Home() {
       <Footer />
     </div>
   );
+}
+export async function getStaticProps({ params }: any) {
+  console.log(params);
+  const res = await fetch(APIKit.defaults.baseURL + '/articles');
+  const articles = await res.json();
+  return {
+    props: {
+      article: articles.data.find((element: any) => element._id === params.id),
+    }, // will be passed to the page component as props
+  };
+}
+export async function getStaticPaths() {
+  const res = await fetch(APIKit.defaults.baseURL + '/articles');
+  const articles = await res.json();
+  return {
+    paths: articles.data.map((item: any) => ({ params: { id: item._id } })),
+    fallback: false, // can also be true or 'blocking'
+  };
 }
