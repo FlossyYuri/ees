@@ -1,6 +1,7 @@
 import BG1Logo from '../assets/image/bg1.jpg';
 import BG2Logo from '../assets/image/bg2.jpg';
 import BG3Logo from '../assets/image/bg3.jpg';
+import BGXLogo from '../assets/image/bgx.jpg';
 import MissionLogo from '../assets/image/home/slider-box1.png';
 import VisionLogo from '../assets/image/home/slider-box2.png';
 import ValueLogo from '../assets/image/home/slider-icon1.png';
@@ -35,6 +36,16 @@ export const CAROUSEL_ITEMS = (t: any): CarouselItemProps[] => [
       image: ValueLogo,
       title: t.carousel.item3.box.title,
       text: t.carousel.item3.box.text,
+    },
+  },
+  {
+    image: BGXLogo,
+    title: t.carousel.item4.title,
+    subtitle: t.carousel.item4.subtitle,
+    box: {
+      image: ValueLogo,
+      title: t.carousel.item4.box.title,
+      text: t.carousel.item4.box.text,
     },
   },
 ];

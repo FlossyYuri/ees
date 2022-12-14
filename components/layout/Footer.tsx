@@ -18,7 +18,7 @@ export default function Footer() {
                 Head Office (Maputo)
                 <span className='flex-1 ml-4 h-1 bg-gray-600'></span>
               </p>
-              <p className='text-4xl'>
+              <p className='text-3xl'>
                 +258 <span className='text-white'>21 486 560</span>
               </p>
               <p className='text-main font-semibold mb-4'>
@@ -48,7 +48,7 @@ export default function Footer() {
                 Delegação Operacional (Chimoio){' '}
                 <span className='flex-1 ml-4 h-1 bg-gray-600'></span>
               </p>
-              <p className='text-4xl'>
+              <p className='text-3xl'>
                 +258 <span className='text-white'>84 666 4430</span>
               </p>
               <p className='text-main font-semibold mb-4'>
@@ -80,7 +80,7 @@ export default function Footer() {
                 Delegação (Gurué){' '}
                 <span className='flex-1 ml-4 h-1 bg-gray-600'></span>
               </p>
-              <p className='text-4xl'>
+              <p className='text-3xl'>
                 +258 <span className='text-white'>86 300 2395</span>
               </p>
               <p className='text-main font-semibold mb-4'>
@@ -112,7 +112,7 @@ export default function Footer() {
                 Delegação (Tete){' '}
                 <span className='flex-1 ml-4 h-1 bg-gray-600'></span>
               </p>
-              <p className='text-4xl'>
+              <p className='text-3xl'>
                 +258 <span className='text-white'>864160563</span>
               </p>
               <p className='text-main font-semibold mb-4'>

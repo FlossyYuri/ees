@@ -1,6 +1,7 @@
 export const en = {
   home: 'Home',
   news: 'News',
+  products: 'Products',
   aboutUs: 'About Us',
   contacts: 'Contacts',
   carousel: {
@@ -34,34 +35,51 @@ export const en = {
         text: 'We are locals and committed to deliver the best service.',
       },
     },
+    item4: {
+      title: `Irrigação e abastecimento solar no apoio à agricultura`,
+      subtitle: `Oferecendo uma base de pagamento conforme o uso (PAYGO)`,
+      box: {
+        title: 'Nossos Valores',
+        text: 'Somos locais e comprometidos em oferecer o melhor serviço.',
+      },
+    },
   },
 };
 
 export const pt = {
   home: 'Home',
   news: 'Notícias',
+  products: 'Produtos',
   aboutUs: 'Sobre nós',
   contacts: 'Contactos',
   carousel: {
     item1: {
-      title: `Iluminamos e desenvolvemos Moçambique.`,
-      subtitle: `Uma empresa moçambicana que atende comunidades rurais vendendo sistemas solares domésticos, oferecendo soluções de resfriamento como serviço (CaaS) e pode propor soluções de energia fora da rede em parceria com empresas locais de instalação.`,
+      title: `Solar Home Systems`,
+      subtitle: `Iluminamos e desenvolvemos Moçambique`,
       box: {
         title: 'Nossa missão',
-        text: 'Fornecer soluções competitivas, sustentáveis e confiáveis para nossos clientes dentro e fora da rede.',
+        text: 'Fornecer soluções competitivas, sustentáveis e confiáveis para os nossos clientes off-grid e on-grid.',
       },
     },
     item2: {
-      title: `Soluções de energia fora da rede`,
-      subtitle: `oferecendo soluções de resfriamento como serviço (CaaS) e pode propor soluções de energia fora da rede em parceria com empresas locais de instalação.`,
+      title: `Câmaras de Frio`,
+      subtitle: `Criamos soluções de armazenamento em Frio Off grid.`,
       box: {
         title: 'Nossa Visão',
         text: 'Acelerar o acesso e uso generalizado de energia limpa em Moçambique, melhorando a qualidade de vida e o potencial económico das comunidades.',
       },
     },
     item3: {
-      title: `Pague conforme o uso.`,
-      subtitle: `Oferecendo uma base de pagamento conforme o uso (PAYGO)`,
+      title: `Técnico da EES a verificar um equipamento de C&amp;I`,
+      subtitle: `Aposta no C&amp;I (micro geração e sistemas autónomos)`,
+      box: {
+        title: 'Nossos Valores',
+        text: 'Somos locais e comprometidos em oferecer o melhor serviço.',
+      },
+    },
+    item4: {
+      title: `Clientes com Bombas de água`,
+      subtitle: `Irrigação e abastecimento solar no apoio à agricultura`,
       box: {
         title: 'Nossos Valores',
         text: 'Somos locais e comprometidos em oferecer o melhor serviço.',

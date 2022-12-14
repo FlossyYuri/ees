@@ -32,6 +32,10 @@ export default function Header() {
       to: '/',
     },
     {
+      text: t.products,
+      to: '#products',
+    },
+    {
       text: t.aboutUs,
       to: '/about-us',
     },
@@ -60,18 +64,12 @@ export default function Header() {
       </nav>
       <div className='flex items-center mr-2 lg:mr-8'>
         <button
-          className='p-2 flex gap-4 items-center'
+          className='p-2 bg-main rounded-full w-10 h-10 flex justify-center items-center text-white font-bold'
           onClick={handleLanguageToggle}
           type='button'
         >
-          <Image
-            className='object-contain'
-            height={32}
-            src={router.locale === 'pt' ? MozambiqueLogo : UsLogo}
-            alt='Locale language icon'
-          />
           <span className='hidden md:flex'>
-            {router.locale === 'en' ? 'English' : 'Português'}
+            {router.locale === 'en' ? 'EN' : 'PT'}
           </span>
         </button>
       </div>

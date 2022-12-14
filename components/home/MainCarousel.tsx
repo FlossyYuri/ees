@@ -35,6 +35,9 @@ export default function MainCarousel() {
         <SwiperSlide className='flex items-center relative'>
           <CarouselItem {...CAROUSEL_ITEMS(t)[2]} />
         </SwiperSlide>
+        <SwiperSlide className='flex items-center relative'>
+          <CarouselItem {...CAROUSEL_ITEMS(t)[3]} />
+        </SwiperSlide>
       </Swiper>
     </section>
   );
