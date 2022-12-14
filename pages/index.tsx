@@ -88,7 +88,7 @@ export default function Home() {
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             <Article
-              author='Jorge Garreth'
+              author='Administração'
               createdAt='10/09/2021'
               image={BG4Logo}
               description={`Em 2021 a Epsilon Energia Solar abriu uma nova delegação na Zambézia, fruto das
@@ -99,7 +99,7 @@ export default function Home() {
               title='Abertura da Delegação do Gurué (Zambézia)'
             />
             <Article
-              author='Martin Garreth'
+              author='Administração'
               createdAt='12/06/2022'
               image={DoacaoImage}
               description={`A Epsilon Energia Solar fez uma doação de 15 kits solares ao Parque Nacional de
@@ -110,7 +110,7 @@ export default function Home() {
               title='Doação de kits solares ao Parque Nacional de Chimanimani'
             />
             <Article
-              author='Martin Garreth'
+              author='Administração'
               createdAt='31/11/2022'
               image={ProjectoImage}
               description={`Está em fase final o projecto da electrificação de 16 Centros de Saúde Rurais na Província da

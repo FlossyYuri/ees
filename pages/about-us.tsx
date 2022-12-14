@@ -60,7 +60,8 @@ export default function Home() {
                       <svg
                         className='fill-main'
                         xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 512 512'>
+                        viewBox='0 0 512 512'
+                      >
                         <path d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z' />
                       </svg>
                     </div>
@@ -71,7 +72,8 @@ export default function Home() {
                       <svg
                         className='fill-main'
                         xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 512 512'>
+                        viewBox='0 0 512 512'
+                      >
                         <path d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z' />
                       </svg>
                     </div>
@@ -92,10 +94,10 @@ export default function Home() {
           </h2>
           <div className='grid grid-cols-3 gap-8'>
             <Article
-              author='Jorge Garreth'
-              date='1/11/2000'
+              author='Administração'
+              createdAt='1/11/2000'
               image={BG4Logo}
-              message={`Batteries are the most expensive part of a solar system.
+              description={`Batteries are the most expensive part of a solar system.
                     Between appropriately-size battery bank and a battery-based
                     inverter like the Outback Radian, you’re looking...`}
               tag='Solar Modules, Solar PV'
@@ -103,10 +105,10 @@ export default function Home() {
                     System by Yourself!'
             />
             <Article
-              author='Martin Garreth'
-              date='12/12/2000'
+              author='Administração'
+              createdAt='12/12/2000'
               image={BG5Logo}
-              message={`Batteries are the most expensive part of a solar system.
+              description={`Batteries are the most expensive part of a solar system.
                     Between appropriately-size battery bank and a battery-based
                     inverter like the Outback Radian, you’re looking...`}
               tag='Solar Modules, Solar PV'
