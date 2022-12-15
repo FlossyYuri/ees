@@ -11,7 +11,7 @@ export interface ArticleProps {
   _id?: string;
 }
 
-export default function Article({
+export default function ArticleCard({
   image,
   _id,
   tag,

@@ -70,8 +70,8 @@ export const pt = {
       },
     },
     item3: {
-      title: `Técnico da EES a verificar um equipamento de C&amp;I`,
-      subtitle: `Aposta no C&amp;I (micro geração e sistemas autónomos)`,
+      title: `Técnico da EES a verificar um equipamento de C&I`,
+      subtitle: `Aposta no C&I (micro geração e sistemas autónomos)`,
       box: {
         title: 'Nossos Valores',
         text: 'Somos locais e comprometidos em oferecer o melhor serviço.',

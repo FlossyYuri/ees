@@ -22,6 +22,7 @@ export default function MainCarousel() {
     <section className='swipper-container-sm swipper-container'>
       <Swiper
         pagination={pagination}
+        autoplay
         navigation={true}
         modules={[Navigation, Pagination]}
         className='h-full'

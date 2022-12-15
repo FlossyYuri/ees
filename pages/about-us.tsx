@@ -13,7 +13,7 @@ import OurPartners from '../components/home/OurPartners';
 import Services from '../components/home/Services';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
-import Article from '../components/news/Article';
+import Article from '../components/news/ArticleCard';
 
 export default function Home() {
   return (

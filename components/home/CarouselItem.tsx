@@ -27,7 +27,7 @@ export default function CarouselItem({
   return (
     <>
       <Image
-        className='w-full object-cover filter brightness-90'
+        className='w-full object-cover filter brightness-50'
         src={image}
         alt='BG1'
       />

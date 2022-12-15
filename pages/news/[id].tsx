@@ -1,13 +1,14 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import BG1Logo from '../../assets/image/bg1.jpg';
 import Footer from '../../components/layout/Footer';
 import Header from '../../components/layout/Header';
-import BG1Logo from '../../assets/image/bg1.jpg';
-import Image from 'next/image';
-import { APIKit } from '../../service';
-import { ArticleProps } from '../../components/news/Article';
+import { ArticleProps } from '../../components/news/ArticleCard';
+import dbConnect from '../../lib/dbConnect';
+import Article from '../../lib/models/Article';
 
 interface Props {
   article: ArticleProps;
@@ -33,16 +34,17 @@ export default function News({ article }: Props) {
               className='w-3/4 bg-white text-gray-600 text-sm -mt-9 rounded-tr-lg
              py-2 px-8 flex items-center gap-4 flex-wrap'
             >
-              <span>{article.createdAt}</span>
+              <span>
+                {new Date(article.createdAt).toLocaleDateString('pt')}
+              </span>
               <span className='block w-min p-2 truncate z-20 bg-main rounded-lg text-white text-xs'>
-                Refined Products, Solar Modules
+                {article.tag}
               </span>
               <span>{article.author}</span>
             </p>
             <div className='p-8'>
               <p className='text-gray-600 text-3xl mb-4 font-semibold'>
-                Solar Power – The Middle East’s Top New Alternative Energy
-                Source
+                {article.title}
               </p>
               <p className='text-gray-500'>
                 The key requirement of this work package is the development of a
@@ -105,20 +107,23 @@ export default function News({ article }: Props) {
   );
 }
 export async function getStaticProps({ params }: any) {
-  console.log(params);
-  const res = await fetch(APIKit.defaults.baseURL + '/articles');
-  const articles = await res.json();
+  await dbConnect();
+  const articles = JSON.parse(JSON.stringify(await Article.find({})));
   return {
     props: {
-      article: articles.data.find((element: any) => element._id === params.id),
+      article: articles.find(
+        (element: any) => element._id.toString() === params.id
+      ),
     }, // will be passed to the page component as props
   };
 }
 export async function getStaticPaths() {
-  const res = await fetch(APIKit.defaults.baseURL + '/articles');
-  const articles = await res.json();
+  await dbConnect();
+  const articles = JSON.parse(JSON.stringify(await Article.find({})));
   return {
-    paths: articles.data.map((item: any) => ({ params: { id: item._id } })),
+    paths: articles.map((item: any) => ({
+      params: { id: item._id.toString() },
+    })),
     fallback: false, // can also be true or 'blocking'
   };
 }

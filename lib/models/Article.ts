@@ -18,5 +18,5 @@ const ArticleSchema = new mongoose.Schema({
   },
 });
 
-module.exports =
-  mongoose.models.Article || mongoose.model('Article', ArticleSchema);
+export default mongoose.models.Article ||
+  mongoose.model('Article', ArticleSchema);

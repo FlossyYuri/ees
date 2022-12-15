@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic';
-import { useRef, useState } from 'react'
 const QuillNoSSRWrapper = dynamic(import('react-quill'), {
   ssr: false,
   loading: () => <p>Loading ...</p>,

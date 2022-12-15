@@ -3,12 +3,12 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import BG1Logo from '../../assets/image/bg1.jpg';
 import Footer from '../../components/layout/Footer';
 import Header from '../../components/layout/Header';
-import Article, { ArticleProps } from '../../components/news/Article';
-import BG1Logo from '../../assets/image/bg1.jpg';
-import BG4Logo from '../../assets/image/bg4.jpg';
-import { APIKit } from '../../service';
+import ArticleCard, { ArticleProps } from '../../components/news/ArticleCard';
+import dbConnect from '../../lib/dbConnect';
+import Article from '../../lib/models/Article';
 
 interface Props {
   articles: ArticleProps[];
@@ -34,7 +34,7 @@ export default function News({ articles }: Props) {
         </div>
         <section className='grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto my-16'>
           {articles.map((article) => (
-            <Article
+            <ArticleCard
               key={article._id}
               _id={article._id}
               author={article.author}
@@ -52,11 +52,12 @@ export default function News({ articles }: Props) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch(APIKit.defaults.baseURL + '/articles');
-  const articles = await res.json();
+  await dbConnect();
+  const articles = await Article.find({});
+  console.log(articles);
   return {
     props: {
-      articles: articles.data,
+      articles: JSON.parse(JSON.stringify(articles)),
     }, // will be passed to the page component as props
   };
 }
