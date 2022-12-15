@@ -1,4 +1,41 @@
 export const en = {
+  head: {
+    title: 'Epsilon Energy Solutions',
+  },
+  aboutSection: {
+    title:
+      'Transformar vidas e desbloquear o potencial ao fornecer acesso a produtos e serviços essenciais em Moçambique',
+    p1: `Less than 30% of Mozambique population has access to
+      electricity, this creates a tremendous need for off grid
+      renewable energy solutions for lighting houses and powering home
+      appliances like TVs, radios and fans; water pumps for rural
+      irrigation and drinking water; cold storage and power solutions
+      for schools, health, off grid administrative centers and remote
+      commercial activities.`,
+    p2: `Initially, the company was set up to sell Solar Home Systems on
+      a Pay as you Go basis (PAYGO). Over the years, EES has
+      successfully expanded the range of products offered to include
+      turnkey productive use solutions (cold rooms, Solar water pumps
+      for drinking and irrigation water) and off grid turnkey power
+      solutions in partnership with local installation companies on an
+      EPC or leasing solution. EES is also exploring Electric Mobility
+      solutions.`,
+    p3: `Epsilon Energia Solar (EES) was incorporated in 2018 under the
+      company’s Act of Mozambique to serve rural communities by
+      increasing their access to affordable sources of energy. With
+      its headquarters in Maputo, EES is mainly active in the central
+      region of the country with 3 regional delegations in Chimoio
+      (Manica and Sofala Provinces), Tete (Tete Province) and Gurue
+      (Zambezia Province).`,
+    button: 'Read more',
+  },
+  recentNews: {
+    title: 'Recent Articles',
+  },
+  partners: {
+    title: 'Our partners',
+  },
+
   home: 'Home',
   news: 'News',
   products: 'Products',

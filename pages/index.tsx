@@ -14,12 +14,14 @@ import Services from '../components/home/Services';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
 import Article from '../components/news/ArticleCard';
+import useTranslation from '../hooks/useTranslation';
 
 export default function Home() {
+  const t = useTranslation();
   return (
     <div className='w-full bg-gray-100'>
       <Head>
-        <title>Epsilon Energy Solutions</title>
+        <title>{t.head.title}</title>
         <meta name='description' content='Solar energy' />
         <meta
           name='viewport'
@@ -40,51 +42,27 @@ export default function Home() {
           </article>
           <article className='col-span-2 flex flex-col'>
             <span className='flex px-4 py-1 bg-main rounded-lg md:truncate md:w-min text-white'>
-              EPSILON SOLAR ENERGY
+              {t.head.title}
             </span>
             <h2 className='font-bold text-4xl mt-2 mb-4 text-gray-700'>
-              Transformar vidas e desbloquear o potencial ao fornecer acesso a
-              produtos e serviços essenciais em Moçambique
+              {t.aboutSection.title}
             </h2>
             <div className='mt-6 grid grid-cols-1 md:grid-cols-2 gap-4'>
-              <p className='text-gray-800 font-semibold'>
-                Less than 30% of Mozambique population has access to
-                electricity, this creates a tremendous need for off grid
-                renewable energy solutions for lighting houses and powering home
-                appliances like TVs, radios and fans; water pumps for rural
-                irrigation and drinking water; cold storage and power solutions
-                for schools, health, off grid administrative centers and remote
-                commercial activities.
-              </p>
-              <p className='text-gray-500 font-semibold'>
-                Initially, the company was set up to sell Solar Home Systems on
-                a Pay as you Go basis (PAYGO). Over the years, EES has
-                successfully expanded the range of products offered to include
-                turnkey productive use solutions (cold rooms, Solar water pumps
-                for drinking and irrigation water) and off grid turnkey power
-                solutions in partnership with local installation companies on an
-                EPC or leasing solution. EES is also exploring Electric Mobility
-                solutions.
-              </p>
+              <p className='text-gray-800 font-semibold'>{t.aboutSection.p1}</p>
+              <p className='text-gray-500 font-semibold'>{t.aboutSection.p2}</p>
               <p className='text-gray-500 mt-4 col-span-2'>
-                Epsilon Energia Solar (EES) was incorporated in 2018 under the
-                company’s Act of Mozambique to serve rural communities by
-                increasing their access to affordable sources of energy. With
-                its headquarters in Maputo, EES is mainly active in the central
-                region of the country with 3 regional delegations in Chimoio
-                (Manica and Sofala Provinces), Tete (Tete Province) and Gurue
-                (Zambezia Province).
+                {t.aboutSection.p3}
               </p>
             </div>
             <div className='flex mt-4'>
-              <AppButton text='Read more' type='dark' />
+              <AppButton text={t.aboutSection.button} type='dark' />
             </div>
           </article>
         </section>
         <Services />
         <section className='container mx-auto mt-24 p-4 md:p-0'>
           <h2 className='text-center font-bold text-4xl mb-4 text-gray-700'>
-            Recent Articles
+            {t.recentNews.title}
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
             <Article
