@@ -30,7 +30,7 @@ export default function Footer() {
           <article className='grid grid-cols-1 md:grid-cols-2 gap-4 justify-end col-span-2'>
             <div className='flex flex-col max-w-xs'>
               <p className='flex items-center  mb-4'>
-                Head Office (Maputo)
+                {t.footer.contact1.title} (Maputo)
                 <span className='flex-1 ml-4 h-1 bg-gray-600'></span>
               </p>
               <p className='text-3xl'>

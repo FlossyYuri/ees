@@ -38,7 +38,7 @@ export default function CarouselItem({
           <article className='text-white flex flex-col items-center md:items-start gap-4'>
             <h2 className='text-4xl md:text-6xl font-bold'>{title}</h2>
             <h3 className='text-lg font-bold'>{subtitle}</h3>
-            <AppButton text={t.head.our} />
+            <AppButton href='#products' text={t.head.our} />
           </article>
           <article className='text-darker mx-auto hidden md:block'>
             <div className='bg-white rounded-lg p-8 flex flex-col items-center relative carousel-card max-w-xs'>

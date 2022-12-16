@@ -29,6 +29,7 @@ export const en = {
       (Manica and Sofala Provinces), Tete (Tete Province) and Gurue
       (Zambezia Province).`,
     button: 'Read more',
+    button2: 'Read less',
   },
   services: {
     title: 'Sustainable, reliable and affordable energy!',
@@ -160,6 +161,7 @@ export const pt = {
     (Províncias de Manica e Sofala), Tete (Província de Tete) e Gurué
     (Província da Zambézia).`,
     button: 'Ler mais',
+    button2: 'Ler menos',
   },
   services: {
     title: 'Energia sustentável, confiável e acessível!',
