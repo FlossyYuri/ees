@@ -7,10 +7,12 @@ import FridgeLogo from '../../assets/image/home/fridge.png';
 import PumpLogo from '../../assets/image/home/pump.png';
 import SolarEnergyLogo from '../../assets/image/home/solar-energy.png';
 import SolarLogo from '../../assets/image/home/solar-panel.png';
+import useTranslation from '../../hooks/useTranslation';
 import AppButton from '../Button';
 import ServiceItem from './ServiceItem';
 
 export default function Services() {
+  const t = useTranslation();
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
@@ -24,22 +26,15 @@ export default function Services() {
     >
       <div className='container grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto'>
         <article>
-          <h3 className='text-main font-semibold'>
-            Energia sustentável, confiável e acessível!
-          </h3>
+          <h3 className='text-main font-semibold'>{t.services.title}</h3>
           <h2 className='font-bold text-4xl mb-8 max-w-sm'>
-            Fornecemos valor aos nossos clientes por meio de produtos e inovação
-            contínua.
+            {t.services.description}
           </h2>
         </article>
         <article>
-          <p className='mb-4'>
-            A Epsilon Energia Solar tem uma rede em expansão de clientes
-            distribuídos por 4 Províncias, oferecendo-lhes uma variedade de
-            produtos e soluções energéticas.
-          </p>
+          <p className='mb-4'>{t.services.description2}</p>
           <div className='flex'>
-            <AppButton text='Get Started' />
+            <AppButton text={t.services.get} />
           </div>
         </article>
       </div>
@@ -67,30 +62,29 @@ export default function Services() {
           <SwiperSlide>
             <ServiceItem
               image={SolarLogo}
-              title='Solar Home Systems'
-              content='Produtos Solares Residenciais SUNKING são a marca que a EES oferece para as soluções energéticas de baixo custo em pagamento CASH ou PAYGO. Temos equipamentos de gama de entrada (50 lumens) até soluções de 12W com 5 lâmpadas.'
+              title={t.services.item1.title}
+              content={t.services.item1.content}
             />
           </SwiperSlide>
           <SwiperSlide>
             <ServiceItem
               image={PumpLogo}
-              title='Bombas Solares'
-              content='Parceiros da LORENTZ em Moçambique, oferecemos uma variedade de produtos e soluções. Projectamos e instalamos sistemas de bombas submersíveis e de superfície de alta qualidade, sempre alimentadas a partir de fontes de energia renováveis. As bombas submersíveis são ideais para a captação de água de furos, enquanto as bombas de superfície podem ser utilizadas como bombas de circulação para piscinas ou para o aumento de pressão em aplicações domésticas.'
+              title={t.services.item2.title}
+              content={t.services.item2.content}
             />
           </SwiperSlide>
           <SwiperSlide>
             <ServiceItem
               image={FridgeLogo}
-              title='Camâras de frio'
-              content='Desenvolvemos o produto mediante as suas necessidades, os sistemas de frio off grid podem ser a solução do seu negócio.'
+              title={t.services.item3.title}
+              content={t.services.item3.content}
             />
           </SwiperSlide>
           <SwiperSlide>
             <ServiceItem
               image={SolarEnergyLogo}
-              title='Sistemas Autónomos'
-              content='Save money on utilities or increase the value of your home by
-                installing solar panels as a great option.'
+              title={t.services.item4.title}
+              content={t.services.item4.content}
             />
           </SwiperSlide>
           {/* <SwiperSlide>
