@@ -1,4 +1,4 @@
-import { Navigation, Pagination } from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CarouselItem from '../../components/home/CarouselItem';
 import { CAROUSEL_ITEMS } from '../../data';
@@ -22,9 +22,14 @@ export default function MainCarousel() {
     <section className='swipper-container-sm swipper-container'>
       <Swiper
         pagination={pagination}
-        autoplay
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        loop={true}
         navigation={true}
-        modules={[Navigation, Pagination]}
+        modules={[Autoplay, Navigation, Pagination]}
         className='h-full'
       >
         <SwiperSlide className='flex items-center relative'>

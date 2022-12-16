@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Navigation, Pagination } from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -13,8 +13,10 @@ import PartnerLogo6 from '../../assets/image/partners/Client-06.png';
 import PartnerLogo7 from '../../assets/image/partners/Client-07.png';
 import PartnerLogo8 from '../../assets/image/partners/Client-08.png';
 import PartnerLogo9 from '../../assets/image/partners/Client-09.png';
+import useTranslation from '../../hooks/useTranslation';
 
 export default function OurPartners() {
+  const t = useTranslation();
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
@@ -24,10 +26,14 @@ export default function OurPartners() {
   return (
     <section className='container mx-auto brand my-16'>
       <h2 className='text-center font-bold text-4xl mb-8 text-gray-700'>
-        Our partners
+        {t.partners.title}
       </h2>
       <Swiper
         slidesPerView='auto'
+        autoplay={{
+          delay: 500,
+        }}
+        loop={true}
         centeredSlides={true}
         breakpoints={{
           640: {
@@ -45,9 +51,8 @@ export default function OurPartners() {
         }}
         spaceBetween={30}
         grabCursor={true}
-        loop
         pagination={pagination}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
       >
         <SwiperSlide>
           <Image

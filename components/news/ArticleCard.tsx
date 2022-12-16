@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
+import useTranslation from '../../hooks/useTranslation';
 
 export interface ArticleProps {
   image: string | StaticImageData;
@@ -20,6 +21,7 @@ export default function ArticleCard({
   createdAt,
   description,
 }: ArticleProps) {
+  const t = useTranslation();
   return (
     <article className='rounded-lg shadow-xl pb-8 news-articles relative overflow-hidden'>
       <div className='flex mr-12 h-48 md:h-80 rounded-br-xl overflow-hidden'>
@@ -45,7 +47,7 @@ export default function ArticleCard({
           className='border-2 border-gray-500 flex items-center gap-2 truncate w-min rounded px-4 py-2 mt-4'
           href={`/news/${_id}`}
         >
-          <span>Read more</span>
+          <span>{t.aboutSection.button}</span>
           <div className='w-5 h-5'>
             <svg
               fill='black'

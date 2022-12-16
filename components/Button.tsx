@@ -2,6 +2,7 @@ import Link from 'next/link';
 export interface ButtonProps {
   type?: 'main' | 'dark' | 'light';
   text: string;
+  href?: string;
 }
 
 const renderColors = (type: 'main' | 'dark' | 'light') => {
@@ -16,13 +17,17 @@ const renderColors = (type: 'main' | 'dark' | 'light') => {
   }
 };
 
-export default function AppButton({ text, type = 'main' }: ButtonProps) {
+export default function AppButton({
+  text,
+  type = 'main',
+  href = '/',
+}: ButtonProps) {
   return (
     <Link
       className={`px-8 py-4 transition-all rounded-lg flex items-center justify-between gap-4 ${renderColors(
         type
       )}`}
-      href='/'
+      href={href}
     >
       <span className='truncate'>{text}</span>
       <div className='h-4 w-4'>

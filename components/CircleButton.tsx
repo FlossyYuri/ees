@@ -1,15 +1,22 @@
 import Link from 'next/link';
+import { useState } from 'react';
 
 export interface CircleButtonProps {
   href: string;
   text?: string;
+  onClick?: () => void;
 }
 
-export default function CircleButton({ href, text }: CircleButtonProps) {
+export default function CircleButton({
+  href,
+  text,
+  onClick,
+}: CircleButtonProps) {
   return (
-    <Link
-      className='rounded-full bg-main p-2 flex items-center transition-all group-hover:px-4'
-      href={href}
+    <button
+      onClick={onClick}
+      className='rounded-full bg-main py-2 px-4 flex items-center transition-all'
+      type='button'
     >
       <div className='h-4 w-4 flex justify-center items-center'>
         <svg
@@ -22,10 +29,10 @@ export default function CircleButton({ href, text }: CircleButtonProps) {
       </div>
 
       {text ? (
-        <span className='text-white transform w-0 h-0 transition-all scale-0 font-semibold group-hover:scale-100 group-hover:w-28 group-hover:h-6 group-hover:ml-4'>
+        <span className='text-white transform transition-all font-semibold ml-4'>
           {text}
         </span>
       ) : null}
-    </Link>
+    </button>
   );
 }

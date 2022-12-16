@@ -1,12 +1,10 @@
-import Image from 'next/image';
 import Hamburger from 'hamburger-react';
-import MozambiqueLogo from '../../assets/icons/mozambique.png';
-import UsLogo from '../../assets/icons/united-states.png';
-import Logo from '../../assets/image/logo2.png';
-import NavLink, { NavLinkProps } from './NavItem';
-import { useState } from 'react';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useState } from 'react';
+import Logo from '../../assets/image/logo2.png';
 import { en, pt } from '../../translations';
+import NavLink, { NavLinkProps } from './NavItem';
 
 export default function Header() {
   const router = useRouter();

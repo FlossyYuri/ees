@@ -14,8 +14,10 @@ import Services from '../components/home/Services';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
 import Article from '../components/news/ArticleCard';
+import useTranslation from '../hooks/useTranslation';
 
 export default function Home() {
+  const t = useTranslation();
   return (
     <div className='w-full bg-gray-100'>
       <Head>
@@ -83,7 +85,7 @@ export default function Home() {
               </div>
             </div>
             <div className='flex mt-4'>
-              <AppButton text='Read more' type='dark' />
+              <AppButton text={t.aboutSection.button} type='dark' />
             </div>
           </article>
         </section>
