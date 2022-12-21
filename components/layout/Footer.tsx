@@ -36,6 +36,9 @@ export default function Footer() {
               <p className='text-3xl'>
                 +258 <span className='text-white'>21 486 560</span>
               </p>
+              <p className='text-3xl'>
+                +258 <span className='text-white'>86 315 1122</span>
+              </p>
               <p className='text-main font-semibold mb-4'>
                 Email: geral@epsilonenergia.co.mz
               </p>
@@ -124,7 +127,7 @@ export default function Footer() {
                 <span className='flex-1 ml-4 h-1 bg-gray-600'></span>
               </p>
               <p className='text-3xl'>
-                +258 <span className='text-white'>864160563</span>
+                +258 <span className='text-white'>86 416 0563</span>
               </p>
               <p className='text-main font-semibold mb-4'>
                 Email: geral@epsilonenergia.co.mz

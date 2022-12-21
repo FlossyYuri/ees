@@ -138,28 +138,9 @@ export const pt = {
   aboutSection: {
     title:
       'Transformar vidas e desbloquear o potencial ao fornecer acesso a produtos e serviços essenciais em Moçambique',
-    p1: `Menos de 30% da população moçambicana tem acesso a
-    eletricidade, isso cria uma enorme necessidade de fora da rede
-    soluções de energia renovável para iluminação de casas e fornecimento de energia
-    eletrodomésticos como TVs, rádios e ventiladores; bombas de agua para zona rural
-    irrigação e água potável; armazenamento a frio e soluções de energia
-    para escolas, saúde, centros administrativos fora da rede e remotos
-    atividades comerciais.`,
-    p2: `Inicialmente, a empresa foi criada para vender Solar Home Systems em
-    uma base de pagamento conforme o uso (PAYGO). Ao longo dos anos, a EES
-    expandiu com sucesso a gama de produtos oferecidos para incluir
-    soluções de uso produtivo chave na mão (câmaras frigoríficas, bombas solares de água
-    para água potável e de irrigação) e energia chave na mão fora da rede
-    soluções em parceria com empresas locais de instalação em um
-    EPC ou solução de leasing. A EES também está explorando a Mobilidade Elétrica
-    soluções.`,
-    p3: `A Epsilon Energia Solar (EES) foi constituída em 2018 sob o
-    Lei de Moçambique da empresa para servir as comunidades rurais
-    aumentar seu acesso a fontes de energia acessíveis. Com
-    com sede em Maputo, a EES desenvolve a sua actividade principalmente no centro
-    região do país com 3 delegações regionais em Chimoio
-    (Províncias de Manica e Sofala), Tete (Província de Tete) e Gurué
-    (Província da Zambézia).`,
+    p1: `Menos de 40% da população em Moçambique tem acesso à eletricidade, o que cria uma enorme necessidade de soluções de energias renováveis fora da rede para iluminação de casas e eletrodomésticos como TVs, rádios e ventiladores; bombas de água para irrigação rural e água potável; armazenamento a frio e soluções de energia para escolas,  centros de saúde, postos administrativos fora da rede e atividades comerciais remotas.`,
+    p2: `Inicialmente, a empresa foi criada para vender Sistemas Solares Residenciais  numa base de Pay as you Go (PAYGO). Ao longo dos anos, a EES expandiu com sucesso a gama de produtos oferecidos incluindo soluções de Uso Produtivo chave na mão (câmaras frigoríficas, bombas solares para água potável e irrigação) e soluções de energia fora da rede “turn key” em parceria com empresas locais de instalação. A EES também está atualmente a explorar soluções de Mobilidade Elétrica.`,
+    p3: `A Epsilon Energia Solar (EES), empresa Moçambicana foi constituída em 2018 para servir as comunidades rurais, aumentando o acesso a fontes de energia acessíveis. Com sede em Maputo, a EES desenvolve a sua actividade principalmente na região centro do país com 3 delegações regionais, Chimoio (províncias de Manica e Sofala), Tete (província de Tete) e Gurué (província de Zambézia).`,
     button: 'Ler mais',
     button2: 'Ler menos',
   },
@@ -191,10 +172,10 @@ export const pt = {
     },
   },
   recentNews: {
-    title: 'Notícias recentes',
+    title: 'Artigos Recentes',
   },
   partners: {
-    title: 'Nossos parceiros',
+    title: 'Parceiros',
   },
   footer: {
     direction: 'Obter direções',
@@ -223,7 +204,7 @@ export const pt = {
   contacts: 'Contactos',
   carousel: {
     item1: {
-      title: `Solar Home Systems`,
+      title: `Criamos soluções de armazenamento de frio Off Grid`,
       subtitle: `Iluminamos e desenvolvemos Moçambique`,
       box: {
         title: 'Nossa missão',
@@ -231,7 +212,7 @@ export const pt = {
       },
     },
     item2: {
-      title: `Câmaras de Frio`,
+      title: `Iluminamos e desenvolvemos Moçambique com soluções em PAYGO`,
       subtitle: `Criamos soluções de armazenamento em Frio Off grid.`,
       box: {
         title: 'Nossa Visão',
@@ -239,7 +220,7 @@ export const pt = {
       },
     },
     item3: {
-      title: `Técnico da EES a verificar um equipamento de C&I`,
+      title: `Aposta no C&I (micro-geração e sistemas autónomos)`,
       subtitle: `Aposta no C&I (micro geração e sistemas autónomos)`,
       box: {
         title: 'Nossos Valores',
@@ -247,7 +228,7 @@ export const pt = {
       },
     },
     item4: {
-      title: `Clientes com Bombas de água`,
+      title: `Irrigação e abastecimento solar no apoio à agricultura`,
       subtitle: `Irrigação e abastecimento solar no apoio à agricultura`,
       box: {
         title: 'Nossos Valores',
