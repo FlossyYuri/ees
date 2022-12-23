@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import AboutImage from '../assets/image/about.jpg';
 import DoacaoImage from '../assets/image/doacao.jpg';
-import ProjectoImage from '../assets/image/maternidade.jpg';
+import ProjectoImage from '../assets/image/maternidade2.jpg';
 import BG4Logo from '../assets/image/bg4.jpg';
 import AppButton from '../components/Button';
 import MainCarousel from '../components/home/MainCarousel';
