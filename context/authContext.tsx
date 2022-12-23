@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 
 const AuthContext = createContext({});
-export const AuthProvider: React.FC = ({ children }: any) => {
+export const AuthProvider: any = ({ children }: any) => {
   const [auth, setAuth] = useState(false);
   async function Login() {
     setAuth(true);
