@@ -7,8 +7,7 @@ import BG1Logo from '../../assets/image/bg1.jpg';
 import Footer from '../../components/layout/Footer';
 import Header from '../../components/layout/Header';
 import ArticleCard, { ArticleProps } from '../../components/news/ArticleCard';
-import dbConnect from '../../lib/dbConnect';
-import Article from '../../lib/models/Article';
+import Article from '../../database/models/articles';
 
 interface Props {
   articles: ArticleProps[];
@@ -35,8 +34,8 @@ export default function News({ articles }: Props) {
         <section className='grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto my-16'>
           {articles.map((article) => (
             <ArticleCard
-              key={article._id}
-              _id={article._id}
+              key={article.id}
+              id={article.id}
               author={article.author}
               createdAt={article.createdAt}
               image={article.image}
@@ -52,9 +51,7 @@ export default function News({ articles }: Props) {
   );
 }
 export async function getStaticProps() {
-  await dbConnect();
-  const articles = await Article.find({});
-  console.log(articles);
+  const articles = await Article.findAll();
   return {
     props: {
       articles: JSON.parse(JSON.stringify(articles)),

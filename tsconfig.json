@@ -22,7 +22,9 @@
     "next-i18next.config.js",
     "next-i18next.config.js",
     "database/config/config.ts",
-    "database/config/config.ts"
+    "database/config/config.ts",
+    "database/models/articles.js",
+    "database/models/articles.js"
   ],
   "exclude": ["node_modules"]
 }

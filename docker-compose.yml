@@ -6,7 +6,7 @@ services:
     image: mongo:4.2
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_DATABASE=auth
+      - MONGO_INITDB_DATABASE=solar
       - MONGO_INITDB_ROOT_PASSWORD=pass
     networks:
       - mongo-compose-network
@@ -17,7 +17,7 @@ services:
 
   mongo-express:
     container_name: mongo-express
-    image: mongo-express
+    image: mongo-express:latest
     depends_on:
       - db
     networks:

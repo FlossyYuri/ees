@@ -47,8 +47,8 @@ export default function Home() {
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
                     stroke-width='2'
                     d='M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z'
                   ></path>
@@ -64,14 +64,14 @@ export default function Home() {
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
                     stroke-width='2'
                     d='M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z'
                   ></path>
                   <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
                     stroke-width='2'
                     d='M15 11a3 3 0 11-6 0 3 3 0 016 0z'
                   ></path>
@@ -86,9 +86,9 @@ export default function Home() {
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
-                    fill-rule='evenodd'
+                    fillRule='evenodd'
                     d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z'
-                    clip-rule='evenodd'
+                    clipRule='evenodd'
                   ></path>
                 </svg>{' '}
                 <p className='ml-2'>Location ABC DEFGH</p>
@@ -108,9 +108,9 @@ export default function Home() {
                     xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      fill-rule='evenodd'
+                      fillRule='evenodd'
                       d='M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z'
-                      clip-rule='evenodd'
+                      clipRule='evenodd'
                     ></path>
                   </svg>
                 </a>
@@ -309,10 +309,10 @@ export default function Home() {
                         gradientUnits='userSpaceOnUse'
                         x2='1'
                       >
-                        <stop offset='0' stop-color='#ff1b2d' />
-                        <stop offset='.3' stop-color='#ff1b2d' />
-                        <stop offset='.614' stop-color='#ff1b2d' />
-                        <stop offset='1' stop-color='#a70014' />
+                        <stop offset='0' stopColor='#ff1b2d' />
+                        <stop offset='.3' stopColor='#ff1b2d' />
+                        <stop offset='.614' stopColor='#ff1b2d' />
+                        <stop offset='1' stopColor='#a70014' />
                       </linearGradient>
                       <linearGradient
                         id='b'
@@ -320,9 +320,9 @@ export default function Home() {
                         gradientUnits='userSpaceOnUse'
                         x2='1'
                       >
-                        <stop offset='0' stop-color='#9c0000' />
-                        <stop offset='.7' stop-color='#ff4b4b' />
-                        <stop offset='1' stop-color='#ff4b4b' />
+                        <stop offset='0' stopColor='#9c0000' />
+                        <stop offset='.7' stopColor='#ff4b4b' />
+                        <stop offset='1' stopColor='#ff4b4b' />
                       </linearGradient>
                       <g transform='matrix(1.3333 0 0 -1.3333 0 107.2)'>
                         <path
@@ -362,8 +362,8 @@ export default function Home() {
                           r='100%'
                           id='radialGradient-1'
                         >
-                          <stop stop-color='#5D9DF6' offset='0%'></stop>
-                          <stop stop-color='#006FFF' offset='100%'></stop>
+                          <stop stopColor='#5D9DF6' offset='0%'></stop>
+                          <stop stopColor='#006FFF' offset='100%'></stop>
                         </radialGradient>
                       </defs>
                       <g
@@ -371,7 +371,7 @@ export default function Home() {
                         stroke='none'
                         stroke-width='1'
                         fill='none'
-                        fill-rule='evenodd'
+                        fillRule='evenodd'
                       >
                         <g id='logo'>
                           <rect
@@ -387,7 +387,7 @@ export default function Home() {
                             d='M169.209772,184.531136 C217.142772,137.600733 294.857519,137.600733 342.790517,184.531136 L348.559331,190.179285 C350.955981,192.525805 350.955981,196.330266 348.559331,198.676787 L328.82537,217.99798 C327.627045,219.171241 325.684176,219.171241 324.485851,217.99798 L316.547278,210.225455 C283.10802,177.485633 228.89227,177.485633 195.453011,210.225455 L186.951456,218.549188 C185.75313,219.722448 183.810261,219.722448 182.611937,218.549188 L162.877976,199.227995 C160.481326,196.881474 160.481326,193.077013 162.877976,190.730493 L169.209772,184.531136 Z M383.602212,224.489406 L401.165475,241.685365 C403.562113,244.031874 403.562127,247.836312 401.165506,250.182837 L321.971538,327.721548 C319.574905,330.068086 315.689168,330.068112 313.292501,327.721609 C313.292491,327.721599 313.29248,327.721588 313.29247,327.721578 L257.08541,272.690097 C256.486248,272.103467 255.514813,272.103467 254.915651,272.690097 C254.915647,272.690101 254.915644,272.690105 254.91564,272.690108 L198.709777,327.721548 C196.313151,330.068092 192.427413,330.068131 190.030739,327.721634 C190.030725,327.72162 190.03071,327.721606 190.030695,327.721591 L110.834524,250.181849 C108.437875,247.835329 108.437875,244.030868 110.834524,241.684348 L128.397819,224.488418 C130.794468,222.141898 134.680206,222.141898 137.076856,224.488418 L193.284734,279.520668 C193.883897,280.107298 194.85533,280.107298 195.454493,279.520668 C195.454502,279.520659 195.45451,279.520651 195.454519,279.520644 L251.65958,224.488418 C254.056175,222.141844 257.941913,222.141756 260.338618,224.488222 C260.338651,224.488255 260.338684,224.488288 260.338717,224.488321 L316.546521,279.520644 C317.145683,280.107273 318.117118,280.107273 318.71628,279.520644 L374.923175,224.489406 C377.319825,222.142885 381.205562,222.142885 383.602212,224.489406 Z'
                             id='WalletConnect'
                             fill='#FFFFFF'
-                            fill-rule='nonzero'
+                            fillRule='nonzero'
                           ></path>
                         </g>
                       </g>

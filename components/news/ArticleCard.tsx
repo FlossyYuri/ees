@@ -9,12 +9,12 @@ export interface ArticleProps {
   createdAt: string;
   author: string;
   description: string;
-  _id?: string;
+  id?: string;
 }
 
 export default function ArticleCard({
   image,
-  _id,
+  id,
   tag,
   title,
   author,
@@ -45,7 +45,7 @@ export default function ArticleCard({
         <p className='text-gray-500'>{description}</p>
         <Link
           className='border-2 border-gray-500 flex items-center gap-2 truncate w-min rounded px-4 py-2 mt-4'
-          href={`/news/${_id}`}
+          href={`/news/${id}`}
         >
           <span>{t.aboutSection.button}</span>
           <div className='w-5 h-5'>

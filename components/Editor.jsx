@@ -39,7 +39,6 @@ const formats = [
 
 export default function MyEditor({ setValue, value }) {
   return <QuillNoSSRWrapper className='mt-4 bg-slate-100' value={value} modules={modules} formats={formats} theme="snow" onChange={(e) => {
-    console.log(e)
     setValue("description", e)
   }} />
 }
