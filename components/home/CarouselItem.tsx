@@ -19,12 +19,7 @@ export interface CarouselItemProps {
   box: Box;
 }
 
-export default function CarouselItem({
-  image,
-  box,
-  subtitle,
-  title,
-}: CarouselItemProps) {
+export default function CarouselItem({ image, box, title }: CarouselItemProps) {
   const t = useTranslation();
   return (
     <>
@@ -37,7 +32,6 @@ export default function CarouselItem({
         <section className='grid grid-cols-1 md:grid-cols-2 gap-4'>
           <article className='text-white flex flex-col items-center md:items-start gap-4'>
             <h2 className='text-4xl md:text-6xl font-bold'>{title}</h2>
-            <h3 className='text-lg font-bold'>{subtitle}</h3>
             <AppButton href='#products' text={t.head.our} />
           </article>
           <article className='text-darker mx-auto hidden md:block'>

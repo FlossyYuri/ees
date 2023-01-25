@@ -64,6 +64,7 @@ export default function Services() {
               image={SolarLogo}
               title={t.services.item1.title}
               content={t.services.item1.content}
+              href='/products/shs'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -71,6 +72,7 @@ export default function Services() {
               image={PumpLogo}
               title={t.services.item2.title}
               content={t.services.item2.content}
+              href='/products/sp'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -78,6 +80,7 @@ export default function Services() {
               image={FridgeLogo}
               title={t.services.item3.title}
               content={t.services.item3.content}
+              href='/products/cr'
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -85,24 +88,9 @@ export default function Services() {
               image={SolarEnergyLogo}
               title={t.services.item4.title}
               content={t.services.item4.content}
+              href='/products/as'
             />
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <ServiceItem
-              image={ElectricLogo}
-              title='Motas eléctricas'
-              content='Save money on utilities or increase the value of your home by
-                installing solar panels as a great option.'
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceItem
-              image={ProjectLogo}
-              title='desenvolvimento de projectos'
-              content='Save money on utilities or increase the value of your home by
-                installing solar panels as a great option.'
-            />
-          </SwiperSlide> */}
         </Swiper>
       </div>
     </section>

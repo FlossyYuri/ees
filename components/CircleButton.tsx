@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useState } from 'react';
 
 export interface CircleButtonProps {
   href: string;
@@ -7,14 +6,10 @@ export interface CircleButtonProps {
   onClick?: () => void;
 }
 
-export default function CircleButton({
-  href,
-  text,
-  onClick,
-}: CircleButtonProps) {
+export default function CircleButton({ href, text }: CircleButtonProps) {
   return (
-    <button
-      onClick={onClick}
+    <Link
+      href={href}
       className='rounded-full bg-main py-2 px-4 flex items-center transition-all'
       type='button'
     >
@@ -33,6 +28,6 @@ export default function CircleButton({
           {text}
         </span>
       ) : null}
-    </button>
+    </Link>
   );
 }

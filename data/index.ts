@@ -1,10 +1,10 @@
 import BG1Logo from '../assets/image/bg1.jpg';
 import BG2Logo from '../assets/image/bg2.jpg';
-import BG3Logo from '../assets/image/irrigacao.png';
 import BGXLogo from '../assets/image/bgx.jpg';
 import MissionLogo from '../assets/image/home/slider-box1.png';
 import VisionLogo from '../assets/image/home/slider-box2.png';
 import ValueLogo from '../assets/image/home/slider-icon1.png';
+import BG3Logo from '../assets/image/irrigacao.png';
 import { CarouselItemProps } from '../components/home/CarouselItem';
 
 export const CAROUSEL_ITEMS = (t: any): CarouselItemProps[] => [
@@ -49,3 +49,22 @@ export const CAROUSEL_ITEMS = (t: any): CarouselItemProps[] => [
     },
   },
 ];
+
+export const PRODUCTS = (t: any) => ({
+  shs: {
+    title: t.productsList.item1.title,
+    description: t.productsList.item1.description,
+  },
+  sp: {
+    title: t.productsList.item2.title,
+    description: t.productsList.item2.description,
+  },
+  cr: {
+    title: t.productsList.item3.title,
+    description: t.productsList.item3.description,
+  },
+  as: {
+    title: t.productsList.item4.title,
+    description: t.productsList.item4.description,
+  },
+});

@@ -7,12 +7,14 @@ export interface ServiceItemProps {
   image: string | StaticImageData;
   title: string;
   content: string;
+  href: string;
 }
 
 export default function ServiceItem({
   image,
   title,
   content,
+  href,
 }: ServiceItemProps) {
   const t = useTranslation();
   const [expand, setExpand] = useState(false);
@@ -33,11 +35,9 @@ export default function ServiceItem({
         {content}
       </p>
       <CircleButton
-        onClick={() => {
-          setExpand(!expand);
-        }}
+        onClick={() => {}}
         text={expand ? t.aboutSection.button2 : t.aboutSection.button}
-        href='/'
+        href={href}
       />
     </article>
   );
