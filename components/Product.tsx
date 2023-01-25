@@ -22,7 +22,7 @@ export default function Product({ description, title }: ProductProps) {
       <main className='flex-1 flex flex-col'>
         <div className='w-full flex-1 relative'>
           <Image
-            className='object-cover absolute top-0 left-0 h-full filter brightness-50'
+            className='object-cover absolute top-0 left-0 h-full w-full filter brightness-50'
             src={ProjectoImage}
             alt='logo 2'
           />
