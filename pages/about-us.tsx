@@ -55,8 +55,8 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 container mx-auto mt-24'>
-          <article className='bg-white rounded-lg p-8 flex flex-col items-center relative carousel-card max-w-xs'>
+        <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 container mx-auto mt-24'>
+          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
             <Image
               className='filter brightness-0'
               height={84}
@@ -70,7 +70,7 @@ export default function Home() {
               {t.aboutSection.mission.text}
             </p>
           </article>
-          <article className='bg-white rounded-lg p-8 flex flex-col items-center relative carousel-card max-w-xs'>
+          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
             <Image
               className='filter brightness-0'
               height={84}
@@ -84,7 +84,7 @@ export default function Home() {
               {t.aboutSection.vision.text}
             </p>
           </article>
-          <article className='bg-white rounded-lg p-8 flex flex-col items-center relative carousel-card max-w-xs'>
+          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
             <Image
               className='filter brightness-0'
               height={84}
