@@ -37,16 +37,13 @@ export default function Product({
       <Header />
       <main className='flex-1 flex flex-col overflow-hidden product'>
         <div className='w-full flex-1 relative'>
-          <Image
-            className='object-cover absolute top-0 left-0 h-full w-full filter brightness-50 blur-sm transform scale-105'
-            src={bg}
-            alt='logo 2'
-          />
           <div className='container mx-auto py-24 z-10 relative'>
-            <h1 className='text-5xl text-white font-semibold mb-4'>{title}</h1>
+            <h1 className='text-5xl text-gray-700 font-semibold mb-4'>
+              {title}
+            </h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
               <div>
-                <p className='text-lg text-white'>{description}</p>
+                <p className='text-lg text-gray-700'>{description}</p>
               </div>
               <div>
                 <Swiper
@@ -70,7 +67,7 @@ export default function Product({
                 </Swiper>
               </div>
             </div>
-            <p className='mt-4 text-gray-200'>
+            <p className='mt-4 text-gray-700'>
               Para mais informações contactar:
             </p>
             <div className='flex gap-4 mt-2 flex-wrap'>

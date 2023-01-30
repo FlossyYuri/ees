@@ -27,119 +27,27 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <MainCarousel />
-        <section className='grid grid-cols-1 md:grid-cols-3 container mx-auto mt-24 gap-8'>
-          <article className='rounded-2xl overflow-hidden'>
-            <Image
-              className='rounded-2xl h-full object-cover'
-              src={AboutImage}
-              alt='hello'
-            />
-          </article>
-          <article className='col-span-2 flex flex-col'>
-            <span className='flex px-4 py-1 bg-main rounded-lg md:truncate md:w-min text-white'>
-              {t.head.title}
-            </span>
-            <h2 className='font-bold text-4xl mt-2 mb-4 text-gray-700'>
-              {t.aboutSection.title}
-            </h2>
-            <div className='mt-6 grid grid-cols-1 md:grid-cols-2 gap-4'>
-              <p className='text-gray-800 font-semibold'>{t.aboutSection.p1}</p>
-              <p className='text-gray-500 font-semibold'>{t.aboutSection.p2}</p>
-              <p className='text-gray-500 mt-4 md:col-span-2'>
-                {t.aboutSection.p3}
-              </p>
-            </div>
-            <div className='flex mt-4'>
-              <AppButton text={t.aboutSection.button} type='dark' />
-            </div>
-          </article>
-        </section>
-        <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 container mx-auto mt-24'>
-          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
-            <Image
-              className='filter brightness-0'
-              height={84}
-              src={MissionLogo}
-              alt='BG1'
-            />
-            <h2 className='text-xl my-4 font-bold'>
-              {t.aboutSection.mission.title}
-            </h2>
-            <p className='text-center text-gray-400 mb-4'>
-              {t.aboutSection.mission.text}
-            </p>
-          </article>
-          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
-            <Image
-              className='filter brightness-0'
-              height={84}
-              src={VisionLogo}
-              alt='BG1'
-            />
-            <h2 className='text-xl my-4 font-bold'>
-              {t.aboutSection.vision.title}
-            </h2>
-            <p className='text-center text-gray-400 mb-4'>
-              {t.aboutSection.vision.text}
-            </p>
-          </article>
-          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
-            <Image
-              className='filter brightness-0'
-              height={84}
-              src={ValueLogo}
-              alt='BG1'
-            />
-            <h2 className='text-xl my-4 font-bold'>
-              {t.aboutSection.values.title}
-            </h2>
-            <p className='text-center text-gray-400 mb-4'>
-              {t.aboutSection.values.text}
-            </p>
-          </article>
-        </section>
         <h2 className='text-center font-bold text-4xl mt-24 mb-24 text-gray-700'>
           {t.members.title}
         </h2>
-        <section className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 container mx-auto gap-8 mb-24'>
+        <section className='flex flex-col container mx-auto gap-8 mb-24'>
           {MEMBERS(t).map((member, index) => (
             <>
               <div
                 key={member.name}
-                className='bg-white rounded-2xl members relative'
+                className='bg-white rounded-2xl members relative flex gap-8 p-8'
               >
                 <Image
-                  className='rounded-2xl h-96 w-full object-cover'
+                  className='rounded-2xl h-32 self-center object-contain'
                   src={member.image}
                   alt='hello'
                 />
-                <div className='p-8 flex'>
-                  <div className='flex flex-col flex-1'>
-                    <p className='font-semibold text-gray-700 text-xl'>
-                      {member.name}
-                    </p>
-                    <p className='text-gray-400'>{member.title}</p>
-                  </div>
-                  <div className='flex items-center'>
-                    <button
-                      onClick={() =>
-                        setModals({ ...modals, [index]: !modals[index] })
-                      }
-                      className='px-4 py-1 transition-all rounded-lg flex items-center justify-between gap-1 bg-white hover:bg-main text-main hover:text-white fill-main hover:fill-white'
-                    >
-                      <span className='truncate'>Ler mais</span>
-                      <div className='w-3 h-3'>
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          viewBox='0 0 448 512'
-                        >
-                          <path d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z' />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
-                  {/* <p className='text-gray-400 mt-4'>{member.description}</p> */}
+                <div className='flex flex-col'>
+                  <p className='font-semibold text-gray-700 text-xl'>
+                    {member.name}
+                  </p>
+                  <p className='text-gray-400'>{member.title}</p>
+                  <p className='text-gray-400 mt-4'>{member.description}</p>
                 </div>
               </div>
               <div

@@ -53,20 +53,19 @@ export const en = {
     item1: {
       title: 'Solar Home Systems',
       content:
-        'Sunking residential sunscreens are the brand that EES offers for low cost energy solutions cash or Paygo.We have input range equipment (50 lumens) to 12W solutions with 5 lamps.',
+        'Epsilon Solar Energy offers energy solutions, such as low -cost residence systems in Cash or Paygo payment models.We have input range equipment (50 lumens) to 12W solutions with 5 lamps.',
     },
     item2: {
       title: 'Solar pumps',
-      content: `Lorentz partners in Mozambique, we offer a variety of products and solutions.We design and install submersible and high quality surface pump systems, always fed from renewable energy sources.Submersible pumps are ideal for capture of holes water, while surface pumps can be used as circulation pumps for pools or to increase pressure in domestic applications.`,
+      content: `We design and install submersible and high quality surface pump systems, always fed from renewable energy sources.Submersible pumps are ideal for capturing holes water, while surface pumps can be used as pool circulation pumps.`,
     },
     item3: {
       title: 'KoolBoks fridge',
-      content: `We have developed the product through your needs, off grid cold systems can be the solution of your business.`,
+      content: `We developed the product through your needs, off grid cold systems can be the solution of your business`,
     },
     item4: {
       title: 'Autonomous systems',
-      content: `Save money on utilities or increase the value of your home by
-      installing solar panels as a great option.`,
+      content: `The solar autonomous equipment is very competitive, silent, non -polluting and simple to install is turned off or connected to the power grid.`,
     },
   },
   recentNews: {
@@ -109,8 +108,8 @@ export const en = {
       can propose off grid power solutions in partnership with local
       installation companies.`,
       box: {
-        title: 'Solar Home Systems',
-        text: 'Epsilon Solar Energy offers energy solutions, such as low -cost residence systems in Cash or Paygo payment models.We have input range equipment (50 lumens) to 12W solutions with 5 lamps.',
+        title: 'Our Mission',
+        text: 'Provide competitive, sustainable, and reliable solutions to both our off grid and on grid clients.',
       },
     },
     item2: {
@@ -119,24 +118,24 @@ export const en = {
       can propose off grid power solutions in partnership with local
       installation companies.`,
       box: {
-        title: 'Solar Pumps',
-        text: 'We design and install submersible and high quality surface pump systems, always fed from renewable energy sources.Submersible pumps are ideal for capturing holes water, while surface pumps can be used as pool circulation pumps.',
+        title: 'Our Vision',
+        text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',
       },
     },
     item3: {
       title: `Pay as you Go basis.`,
       subtitle: `Offering pay as you go basis (PAYGO)`,
       box: {
-        title: 'Autonomous systems',
-        text: 'The solar autonomous equipment is very competitive, silent, non -polluting and simple to install is turned off or connected to the power grid.',
+        title: 'Our Values',
+        text: 'We are locals and committed to deliver the best service.',
       },
     },
     item4: {
       title: `Irrigation and solar supply in support for agriculture`,
       subtitle: `Offering a payment base according to use (Paygo)`,
       box: {
-        title: 'Cold Rooms',
-        text: 'We developed the product through your needs, off grid cold systems can be the solution of your business',
+        title: 'Our Vision',
+        text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',
       },
     },
   },
@@ -253,20 +252,19 @@ export const pt = {
     item1: {
       title: 'Solar Home Systems',
       content:
-        'Produtos Solares Residenciais SUNKING são a marca que a EES oferece para as soluções energéticas de baixo custo em pagamento CASH ou PAYGO. Temos equipamentos de gama de entrada (50 lumens) até soluções de 12W com 5 lâmpadas.',
+        'A Epsilon Energia Solar oferece soluções energéticas, como os Sistemas Solares Residências de baixo custo em modelos de pagamento CASH ou PAYGO. Temos equipamentos de gama de entrada (50 lumens) até soluções de 12W com 5 lâmpadas.',
     },
     item2: {
       title: 'Bombas Solares',
-      content: `Parceiros da LORENTZ em Moçambique, oferecemos uma variedade de produtos e soluções. Projectamos e instalamos sistemas de bombas submersíveis e de superfície de alta qualidade, sempre alimentadas a partir de fontes de energia renováveis. As bombas submersíveis são ideais para a captação de água de furos, enquanto as bombas de superfície podem ser utilizadas como bombas de circulação para piscinas ou para o aumento de pressão em aplicações domésticas.`,
+      content: `Projectamos e instalamos sistemas de bombas submersíveis e de superfície de alta qualidade, sempre alimentadas a partir de fontes de energia renováveis. As bombas submersíveis são ideais para a captação de água de furos, enquanto as bombas de superfície podem ser utilizadas como bombas de circulação para piscinas.`,
     },
     item3: {
       title: 'Camâras de frio',
-      content: `Desenvolvemos o produto mediante as suas necessidades, os sistemas de frio off grid podem ser a solução do seu negócio.`,
+      content: `Desenvolvemos o produto mediante as suas necessidades, os sistemas de frio off grid podem ser a solução do seu negócio`,
     },
     item4: {
       title: 'Sistemas Autónomos',
-      content: `Save money on utilities or increase the value of your home by
-      installing solar panels as a great option.`,
+      content: `Os equipamentos autónomos solares são muito competitivos, silenciosos, não poluentes e simples de instalar seja desligado ou ligado à rede eléctrica.`,
     },
   },
   recentNews: {
@@ -304,32 +302,32 @@ export const pt = {
     item1: {
       title: `Iluminamos e desenvolvemos Moçambique`,
       box: {
-        title: 'Solar Home Systems',
-        text: 'A Epsilon Energia Solar oferece soluções energéticas, como os Sistemas Solares Residências de baixo custo em modelos de pagamento CASH ou PAYGO. Temos equipamentos de gama de entrada (50 lumens) até soluções de 12W com 5 lâmpadas.',
+        title: 'Nossa missão',
+        text: 'Fornecer soluções competitivas, sustentáveis e confiáveis para os nossos clientes off-grid e on-grid.',
       },
     },
     item2: {
       title: `Iluminamos e desenvolvemos Moçambique com soluções em PAYGO`,
       subtitle: `Criamos soluções de armazenamento em Frio Off grid.`,
       box: {
-        title: 'Bombas Solares',
-        text: 'Projectamos e instalamos sistemas de bombas submersíveis e de superfície de alta qualidade, sempre alimentadas a partir de fontes de energia renováveis. As bombas submersíveis são ideais para a captação de água de furos, enquanto as bombas de superfície podem ser utilizadas como bombas de circulação para piscinas.',
+        title: 'Nossa Visão',
+        text: 'Acelerar o acesso e uso generalizado de energia limpa em Moçambique, melhorando a qualidade de vida e o potencial económico das comunidades.',
       },
     },
     item3: {
       title: `Aposta no C&I (micro-geração e sistemas autónomos)`,
       subtitle: `Aposta no C&I (micro geração e sistemas autónomos)`,
       box: {
-        title: 'Sistemas Autónomos',
-        text: 'Os equipamentos autónomos solares são muito competitivos, silenciosos, não poluentes e simples de instalar seja desligado ou ligado à rede eléctrica.',
+        title: 'Nossos Valores',
+        text: 'Somos locais e comprometidos em oferecer o melhor serviço.',
       },
     },
     item4: {
       title: `Irrigação e abastecimento solar no apoio à agricultura`,
       subtitle: `Irrigação e abastecimento solar no apoio à agricultura`,
       box: {
-        title: 'Câmara de Frio',
-        text: 'Desenvolvemos o produto mediante as suas necessidades, os sistemas de frio off grid podem ser a solução do seu negócio',
+        title: 'Nossa Visão',
+        text: 'Acelerar o acesso e uso generalizado de energia limpa em Moçambique, melhorando a qualidade de vida e o potencial económico das comunidades.',
       },
     },
   },

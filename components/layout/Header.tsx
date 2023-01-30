@@ -49,7 +49,7 @@ export default function Header() {
 
   const [isOpen, setOpen] = useState(false);
   return (
-    <header className='flex text-darker'>
+    <header className='flex text-darker shadow-sm'>
       <div className='pl-4 md:px-12 md:border-r md:border-gray-300 flex-1 md:flex-none'>
         <Image height={80} src={Logo} alt='Epsilon LOGO' />
       </div>
