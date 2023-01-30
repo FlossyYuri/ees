@@ -39,7 +39,7 @@ export default function ArticleCard({
         </span>
         <h3 className='font-semibold text-lg mb-2'>{title}</h3>
         <div className='flex text-xs mb-2 text-gray-600 justify-between'>
-          <span>{createdAt}</span>
+          <span>{new Date(createdAt).toLocaleDateString('pt-BR')}</span>
           <span>{author}</span>
         </div>
         <p className='text-gray-500'>{description}</p>

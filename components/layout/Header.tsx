@@ -13,10 +13,10 @@ export default function Header() {
   const handleLanguageToggle = () => {
     switch (router.locale) {
       case 'pt':
-        router.push('/', '/', { locale: 'en' });
+        router.push(router.pathname, router.pathname, { locale: 'en' });
         break;
       case 'en':
-        router.push('/', '/', { locale: 'pt' });
+        router.push(router.pathname, router.pathname, { locale: 'pt' });
         break;
 
       default:
@@ -31,7 +31,7 @@ export default function Header() {
     },
     {
       text: t.products,
-      to: '#products',
+      to: '/#products',
     },
     {
       text: t.aboutUs,
@@ -66,9 +66,7 @@ export default function Header() {
           onClick={handleLanguageToggle}
           type='button'
         >
-          <span className='hidden md:flex'>
-            {router.locale === 'en' ? 'EN' : 'PT'}
-          </span>
+          <span>{router.locale === 'en' ? 'EN' : 'PT'}</span>
         </button>
       </div>
       <div className='flex items-center p-4 z-50 md:hidden'>

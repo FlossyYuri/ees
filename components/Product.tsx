@@ -1,16 +1,32 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import useTranslation from '../hooks/useTranslation';
-import ProjectoImage from '../assets/image/maternidade2.jpg';
+import { Navigation, Pagination } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Header from './layout/Header';
 
 export interface ProductProps {
   title: string;
   description: string;
+  bg: any;
+  images: any[];
 }
-export default function Product({ description, title }: ProductProps) {
-  const t = useTranslation();
+export default function Product({
+  description,
+  title,
+  bg,
+  images,
+}: ProductProps) {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index: number, className: string) {
+      return '<span class="' + className + '"></span>';
+    },
+  };
+
   return (
     <div className='w-full min-h-screen bg-gray-100 flex flex-col'>
       <Head>
@@ -19,16 +35,41 @@ export default function Product({ description, title }: ProductProps) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <main className='flex-1 flex flex-col'>
+      <main className='flex-1 flex flex-col overflow-hidden product'>
         <div className='w-full flex-1 relative'>
           <Image
-            className='object-cover absolute top-0 left-0 h-full w-full filter brightness-50'
-            src={ProjectoImage}
+            className='object-cover absolute top-0 left-0 h-full w-full filter brightness-50 blur-sm transform scale-105'
+            src={bg}
             alt='logo 2'
           />
           <div className='container mx-auto py-24 z-10 relative'>
             <h1 className='text-5xl text-white font-semibold mb-4'>{title}</h1>
-            <p className='text-lg text-white'>{description}</p>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+              <div>
+                <p className='text-lg text-white'>{description}</p>
+              </div>
+              <div>
+                <Swiper
+                  pagination={pagination}
+                  navigation={true}
+                  modules={[Navigation, Pagination]}
+                  centeredSlides={true}
+                  slidesPerView={1}
+                >
+                  {images?.map((item: any, index: any) => (
+                    <SwiperSlide key={index}>
+                      <div className=''>
+                        <Image
+                          className='w-2/3 max-h-72 object-contain max-w-sm mx-auto'
+                          src={item}
+                          alt='logo 2'
+                        />
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </div>
             <p className='mt-4 text-gray-200'>
               Para mais informações contactar:
             </p>

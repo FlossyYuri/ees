@@ -30,6 +30,18 @@ export const en = {
       (Zambezia Province).`,
     button: 'Read more',
     button2: 'Read less',
+    mission: {
+      title: 'Our Mission',
+      text: 'Provide competitive, sustainable, and reliable solutions to both our off grid and on grid clients.',
+    },
+    vision: {
+      title: 'Our Vision',
+      text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',
+    },
+    values: {
+      title: 'Our Values',
+      text: 'We are locals and committed to deliver the best service.',
+    },
   },
   services: {
     title: 'Sustainable, reliable and affordable energy!',
@@ -161,6 +173,47 @@ export const en = {
       `,
     },
   },
+  members: {
+    title: 'The Board of Directors',
+    item1: {
+      name: 'Paulo Raposeiro',
+      title: 'CEO, Board Member',
+      description:
+        'Paulo Raposeiro is the CEO of Epsilon Energia Solar and Executive Director of Épsilon Investimentos SA, responsible for the development of Real Estate projects. Mr. Paulo has 12 years of experience in managing engineering contracts in Mozambique and Portugal, in areas such as port infrastructure, schools, energy networks and housing. He has vast experience in leading multidisciplinary teams in complex contracts with clients in the OIL & GAS and Mining sectors. He is Graduate and Master´s degree in engineer from the Universidade Nova de Lisboa with strong analytical and communication skills; qualified in Portugal and Brazil. Previously, he was Managing Director in Mozambique at Consulgal SA, a Portuguese engineering and management consultancy, and prior to that he was consulting at Bioglobal MZ and did some research at the National Civil Engineering Laboratory (LNEC) in Portugal. ',
+    },
+    item2: {
+      name: 'Mamudo Ibraimo',
+      title: 'CFO, Board Member',
+      description:
+        'Mamudo Ibraimo is a Director and the CFO of Epsilon Investimentos, S.A. Mamudo Ibrahimo has 35 years of experience in the ICT industry, and more than 18 years in senior management at C-Level roles at medium and large companies in the industry. He has proven skills in business, operational, commercial, finance and human resources. Has strong leadership skills. Mamudo has wide experience in ownership of core planning, corporate strategy and business development functions across companies.  Previously, he worked as an Advisor of the Board of Directors of Mozambique Telecom S.A, prior to that, he was the CEO of TDM, Teledata and Mcel. He has a master’s degree in Business Finance from the University of Technology, Sydney, (UTS), New South Wales, Australia, 1997 – 1998, and a bachelor’s degree in Business Finance from the University of Technology, Sydney, (UTS), New South Wales, Australia, 1994 – 1997',
+    },
+    item3: {
+      name: 'Cedrick Lemarie',
+      title: 'Acionista e Presidente do Conselho de Administração.',
+      description:
+        'With more than 25 years of experience in the energy sector, Cedrick Lemarie has been working on developing IPP projects, B2B and B2C energy related projects at ENGIE and with the Brazilian mining group Vale where he was in charge of energy projects for the EMEA region. Cedrick is a business angel in the energy start up ROAM (electric mobility) and oversaw business development for the ENGIE Group in Eastern Africa before joining Epsilon Energia Solar. As such he has developed the strategy of the group to enter new countries in the region and look for potential partners and acquisitions. Cedrick holds a master’s degree from Paris Dauphine (France), Edith Cowan University (Australia) and Fundacao Getulio Vargas (Brazil). He is a French and Mozambican national.',
+    },
+    item4: {
+      name: 'Mdungaze Rebelo',
+      title: 'Representante do acionista Epsilon Investimentos SA',
+      description:
+        'Mdungaze Rebelo is Épsilon’s Vice-President and has been with the company since its inception in 2007. Mr. Rebelo oversees the real estate development projects and is the focal point for some of Epsilon’s key partnerships and clients, in particular Tier 1 and Tier 2 Service Providers to Rovuma LNG projects. He has over 12 years of experience developing projects in Mozambique’s complex business, operational and legal environment and dealing with procurement and local authorities. He is a certified Architect & Urban Planner (Universidade Federal do Paraná - Brasil) and worked as an architect with Jose Forjaz Arquitectos, prior to joining Epsilon. He also holds an MBA from the prestigious University of Cape Town’s Graduate School of Business.',
+    },
+    item5: {
+      name: 'Gregor Binkert',
+      title: 'Shareholder',
+      description:
+        'Gregor Binkert is the CEO of BD Consulting & Investment Ltd in Switzerland, a developer of industrial parks and energy projects in Africa and Latin America. It also provides consulting services on institutional development, Public-Private Partnerships, and social impact investments. Clients include Boston Consulting Group and Bain Consulting. Mr. Binkert is the Chairman of the Board of Monter Capital Partnership with offices in Zambia and Mauritius, a privately held diversified investor and asset manager, and an Independent Non-Executive Board Director of Emerging Africa Capital Group, a financial services and impact investment company in Nigeria. He is also a Board Director of MozParks, a holding company for industrial and agro-parks in Mozambique that includes the Beluluane Industrial Park, the country’s premier industrial park, and a Board Director of Epsilon Energia Solar. Prior to that, Mr. Binkert held senior management positions at the World Bank including Country Director for Central Africa based in Cameroon. In that capacity, he managed a portfolio of USD 2.8 billion largely in infrastructure projects. He holds a Ph.D. from Stanford and an AB from Harvard University. He is a Swiss national.',
+    },
+  },
+  contactsPage: {
+    button: 'Send email',
+    title: 'Find Us',
+    description:
+      'Contact us for more information, we will be happy to share with you our solutions!',
+    headquarters: 'Head Quarters',
+    years: 'Years Of Experience In The Solar Industry',
+  },
 };
 
 export const pt = {
@@ -176,6 +229,18 @@ export const pt = {
     p3: `A Epsilon Energia Solar (EES), empresa Moçambicana foi constituída em 2018 para servir as comunidades rurais, aumentando o acesso a fontes de energia acessíveis. Com sede em Maputo, a EES desenvolve a sua actividade principalmente na região centro do país com 3 delegações regionais, Chimoio (províncias de Manica e Sofala), Tete (província de Tete) e Gurué (província de Zambézia).`,
     button: 'Ler mais',
     button2: 'Ler menos',
+    mission: {
+      title: 'Nossa missão',
+      text: 'Fornecer soluções competitivas, sustentáveis e confiáveis para os nossos clientes off-grid e on-grid.',
+    },
+    vision: {
+      title: 'Nossa Visão',
+      text: 'Acelerar o acesso e uso generalizado de energia limpa em Moçambique, melhorando a qualidade de vida e o potencial económico das comunidades.',
+    },
+    values: {
+      title: 'Nossos Valores',
+      text: 'Somos locais e comprometidos em oferecer o melhor serviço.',
+    },
   },
   services: {
     title: 'Energia sustentável, confiável e acessível!',
@@ -301,5 +366,46 @@ export const pt = {
       Soluções de leasing também podem ser estudadas dependendo do perfil financeiro do cliente.
       `,
     },
+  },
+  members: {
+    title: 'Conselho de Administração',
+    item1: {
+      name: 'Paulo Raposeiro',
+      title: 'CEO, Membro do Conselho de Administração',
+      description:
+        'Paulo Raposeiro é CEO da Epsilon Energia Solar e Diretor Executivo da Épsilon Investimentos SA, responsável pelo desenvolvimento de projetos Imobiliários. Com 12 anos de experiência na gestão de contratos de engenharia em Moçambique e Portugal, em áreas como infraestruturas portuárias, escolas, redes de energia e habitação. Possui vasta experiência na liderança de equipes multidisciplinares em contratos complexos com clientes dos setores de OIL & GAS e Mineração. Graduado e mestre em engenharia pela Universidade Nova de Lisboa com fortes habilidades analíticas e de comunicação; qualificado em Portugal e no Brasil. Anteriormente, foi Diretor Geral em Moçambique na Consulgal SA, empresa portuguesa de consultoria em engenharia e gestão, e antes disso foi consultor na Bioglobal MZ e fez investigação no Laboratório Nacional de Engenharia Civil (LNEC) em Portugal.',
+    },
+    item2: {
+      name: 'Mamudo Ibraimo',
+      title: 'CFO, Membro do Conselho de Administração',
+      description:
+        'Mamudo Ibraimo é Administrador e CFO da Epsilon Investimentos, S.A., com 35 anos de experiência na indústria das ITC, e mais de 18 anos em gestão sénior em cargos C-Level em médias e grandes empresas do setor. Ele tem habilidades comprovadas em negócios, operacional, comercial, financeiro e recursos humanos. Tem fortes habilidades de liderança. Mamudo tem ampla experiência em planeamento, estratégia corporativa e funções de desenvolvimento de negócios em empresas. Anteriormente, trabalhou como Assessor do Conselho de Administração da Mozambique Telecom S.A, antes disso, foi CEO da TDM, Teledata e Mcel. Ele tem mestrado em Finanças Empresariais pela University of Technology, Sydney, (UTS), New South Wales, Austrália, 1997 – 1998, e bacharelado em Finanças Empresariais pela University of Technology, Sydney, (UTS), Nova South Wales, Austrália, 1994-1997. ',
+    },
+    item3: {
+      name: 'Cedrick Lemarie',
+      title: 'Acionista e Presidente do Conselho de Administração.',
+      description:
+        'Com mais de 25 anos de experiência no setor de energia, Cedrick Lemarie tem trabalhado no desenvolvimento de projetos IPP, projetos B2B e B2C relacionados à energia na ENGIE e no grupo de mineração brasileiro Vale, onde foi responsável por projetos de energia para a região EMEA. Cedrick é um business angel na startup de energia ROAM (mobilidade elétrica) e supervisionou o desenvolvimento de negócios para o Grupo ENGIE na África Oriental antes de ingressar na Epsilon Energia Solar. Como tal, desenvolveu a estratégia do grupo para entrar em novos países da região e procurar potenciais parceiros e aquisições. Cedrick possui mestrado pela Paris Dauphine (França), Edith Cowan University (Austrália) e Fundação Getulio Vargas (Brasil). É cidadão francês e moçambicano. ',
+    },
+    item4: {
+      name: 'Mdungaze Rebelo',
+      title: 'Representante do acionista Epsilon Investimentos SA',
+      description:
+        'Mdungaze Rebelo é Vice-Presidente da Épsilon e está na empresa desde a sua criação em 2007. O Sr. Rebelo supervisiona os projetos de desenvolvimento imobiliário e é o ponto focal para alguns dos principais parceiros e clientes da Epsilon, em particular Tier 1 e Tier 2 Service Provedores de projetos Rovuma LNG. Ele tem mais de 12 anos de experiência desenvolvendo projetos no complexo ambiente empresarial, operacional e jurídico de Moçambique e lidando com aquisições e autoridades locais.  É Arquiteto e Urbanista certificado pela Universidade Federal do Paraná - Brasil e trabalhou como arquiteto na Jose Forjaz Arquitectos, antes de ingressar na Epsilon. Ele também possui um MBA da prestigiada Escola de Negócios da Universidade da Cidade do Cabo. ',
+    },
+    item5: {
+      name: 'Gregor Binkert',
+      title: 'Shareholder',
+      description:
+        'Gregor Binkert é CEO da BD Consulting & Investment Ltd na Suíça, developer de parques industriais e projetos de energia em África e na América Latina. Também presta serviços de consultoria em desenvolvimento institucional, Parcerias Público-Privadas e investimentos de impacto social. Os clientes incluem Boston Consulting Group e Bain Consulting. O Sr. Binkert é o Presidente do Conselho da Monter Capital Partnership com escritórios na Zâmbia e nas Maurícias, um investidor diversificado de capital privado e gestor de ativos, e um Diretor Não-Executivo Independente do Emerging Africa Capital Group, uma empresa de serviços financeiros e investimento de impacto na Nigéria. É também Administrador da MozParks, holding de parques industriais e agro-parques em Moçambique que inclui o Parque Industrial de Beluluane, o principal parque industrial do país, e Administrador da Epsilon Energia Solar. ',
+    },
+  },
+  contactsPage: {
+    button: 'Enviar Email',
+    title: 'Encontre-nos',
+    description:
+      'Contacte-nos para mais informações, nós adoraremos partilhar nossas soluções com você!',
+    headquarters: 'Sede',
+    years: 'Anos de Experiência da industria solar.',
   },
 };
