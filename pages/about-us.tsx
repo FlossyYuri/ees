@@ -35,7 +35,7 @@ export default function Home() {
             <>
               <div
                 key={member.name}
-                className='bg-white rounded-2xl members relative flex gap-8 p-8'
+                className='bg-white rounded-2xl members relative flex flex-col md:flex-row text-center md:text-left gap-8 p-8'
               >
                 <Image
                   className='rounded-2xl h-32 self-center object-contain'
