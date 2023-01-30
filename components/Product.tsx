@@ -72,14 +72,13 @@ export default function Product({
             </p>
             <div className='flex gap-4 mt-2 flex-wrap'>
               <Link
-                className='px-8 py-4 transition-all rounded-lg flex items-center justify-between gap-2 bg-main hover:bg-white text-white hover:text-gray-700 fill-white hover:fill-gray-700'
+                className='px-8 py-4 transition-all rounded-lg flex items-center justify-between gap-2 bg-main hover:bg-white text-white hover:text-main fill-white hover:fill-main'
                 href='https://wa.link/7t9ohw'
               >
                 <svg
                   width='24'
                   height='24'
                   viewBox='0 0 24 24'
-                  className='fill-white'
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path d='M17.7588 13.7907C17.712 13.7683 15.9624 12.9067 15.6515 12.7948C15.5245 12.7492 15.3885 12.7047 15.2439 12.7047C15.0077 12.7047 14.8092 12.8225 14.6546 13.0537C14.4798 13.3135 13.9507 13.932 13.7872 14.1168C13.7659 14.1412 13.7367 14.1703 13.7193 14.1703C13.7036 14.1703 13.4329 14.0588 13.3509 14.0232C11.474 13.2079 10.0493 11.2473 9.85397 10.9167C9.82607 10.8691 9.8249 10.8475 9.82467 10.8475C9.83152 10.8224 9.89464 10.7591 9.92721 10.7265C10.0225 10.6322 10.1258 10.5079 10.2257 10.3876C10.273 10.3307 10.3203 10.2736 10.3668 10.2199C10.5118 10.0513 10.5763 9.92035 10.6511 9.76871L10.6903 9.68993C10.873 9.32705 10.717 9.02081 10.6665 8.92193C10.6252 8.83918 9.88638 7.05616 9.80784 6.86884C9.61895 6.41681 9.36937 6.20634 9.02254 6.20634C8.99035 6.20634 9.02254 6.20634 8.88757 6.21203C8.72324 6.21897 7.8283 6.33678 7.43261 6.58621C7.013 6.85076 6.30313 7.69403 6.30313 9.17705C6.30313 10.5118 7.15015 11.772 7.51381 12.2513C7.52285 12.2634 7.53944 12.2879 7.56352 12.3232C8.95622 14.3571 10.6924 15.8644 12.4524 16.5675C14.1469 17.2443 14.9492 17.3226 15.4054 17.3226H15.4055C15.5971 17.3226 15.7506 17.3075 15.8859 17.2942L15.9718 17.286C16.5571 17.2341 17.8435 16.5676 18.1361 15.7545C18.3666 15.114 18.4273 14.4143 18.274 14.1603C18.169 13.9876 17.9879 13.9008 17.7588 13.7907Z' />
@@ -88,14 +87,13 @@ export default function Product({
                 <span className='truncate'>Whatsapp</span>
               </Link>
               <Link
-                className='px-8 py-4 transition-all rounded-lg flex items-center justify-between gap-2 bg-main hover:bg-white text-white hover:text-gray-700 fill-white hover:fill-gray-700'
+                className='px-8 py-4 transition-all rounded-lg flex items-center justify-between gap-2 bg-main hover:bg-white text-white hover:text-main fill-white hover:fill-main'
                 href='mailto:geral@epsilonenergia.co.mz'
               >
                 <svg
                   width='24'
                   height='20'
                   viewBox='0 0 24 20'
-                  className='fill-white'
                   xmlns='http://www.w3.org/2000/svg'
                 >
                   <path
