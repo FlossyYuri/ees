@@ -33,9 +33,6 @@ export default function Services() {
         </article>
         <article>
           <p className='mb-4'>{t.services.description2}</p>
-          <div className='flex'>
-            <AppButton text={t.services.get} />
-          </div>
         </article>
       </div>
       <div className='container mx-auto mt-16'>

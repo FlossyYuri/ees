@@ -3,7 +3,6 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import BG1Logo from '../../assets/image/bg1.jpg';
 import Footer from '../../components/layout/Footer';
 import Header from '../../components/layout/Header';
 import { ArticleProps } from '../../components/news/ArticleCard';
@@ -75,7 +74,8 @@ export default function News({ article }: Props) {
   );
 }
 export async function getStaticProps({ params }: any) {
-  const articles = JSON.parse(JSON.stringify(await Article.findAll()));
+  const articlesList = await Article.findAll();
+  const articles = JSON.parse(JSON.stringify(articlesList));
   return {
     props: {
       article: articles.find(
@@ -85,7 +85,8 @@ export async function getStaticProps({ params }: any) {
   };
 }
 export async function getStaticPaths() {
-  const articles = JSON.parse(JSON.stringify(await Article.findAll()));
+  const articlesList = await Article.findAll();
+  const articles = JSON.parse(JSON.stringify(articlesList));
   return {
     paths: articles.map((item: any) => ({
       params: { id: item.id.toString() },

@@ -19,7 +19,7 @@ interface Props {
 export default function Home({ articles }: Props) {
   const t = useTranslation();
   return (
-    <div className='w-full bg-gray-100'>
+    <div className='w-full bg-gray-100 text-justify'>
       <Head>
         <title>{t.head.title}</title>
         <meta name='description' content='Solar energy' />
@@ -53,9 +53,6 @@ export default function Home({ articles }: Props) {
               <p className='text-gray-500 mt-4 md:col-span-2'>
                 {t.aboutSection.p3}
               </p>
-            </div>
-            <div className='flex mt-4'>
-              <AppButton text={t.aboutSection.button} type='dark' />
             </div>
           </article>
         </section>

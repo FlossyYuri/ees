@@ -4,22 +4,16 @@ import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import AboutImage from '../assets/image/about.jpg';
-import AppButton from '../components/Button';
-import MainCarousel from '../components/home/MainCarousel';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
 import { MEMBERS } from '../data';
 import useTranslation from '../hooks/useTranslation';
-import MissionLogo from '../assets/image/home/slider-box1.png';
-import VisionLogo from '../assets/image/home/slider-box2.png';
-import ValueLogo from '../assets/image/home/slider-icon1.png';
 
 export default function Home() {
   const t = useTranslation();
   const [modals, setModals]: any = useState({});
   return (
-    <div className='w-full bg-gray-100'>
+    <div className='w-full bg-gray-100 text-justify'>
       <Head>
         <title>EES</title>
         <meta name='description' content='Solar energy' />
@@ -35,7 +29,7 @@ export default function Home() {
             <>
               <div
                 key={member.name}
-                className='bg-white rounded-2xl members relative flex flex-col md:flex-row text-center md:text-left gap-8 p-8'
+                className='bg-white rounded-2xl members relative flex flex-col md:flex-row md:text-left gap-8 p-8'
               >
                 <Image
                   className='rounded-2xl h-32 self-center object-contain'
@@ -47,7 +41,9 @@ export default function Home() {
                     {member.name}
                   </p>
                   <p className='text-gray-400'>{member.title}</p>
-                  <p className='text-gray-400 mt-4'>{member.description}</p>
+                  <p className='text-gray-400 mt-4 text-justify'>
+                    {member.description}
+                  </p>
                 </div>
               </div>
               <div

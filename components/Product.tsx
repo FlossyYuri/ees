@@ -28,7 +28,7 @@ export default function Product({
   };
 
   return (
-    <div className='w-full min-h-screen bg-gray-100 flex flex-col'>
+    <div className='w-full min-h-screen bg-gray-100 flex flex-col text-justify'>
       <Head>
         <title>{title}</title>
         <meta name='description' content={description} />
@@ -43,7 +43,9 @@ export default function Product({
             </h1>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
               <div>
-                <p className='text-lg text-gray-700'>{description}</p>
+                <p className='text-lg text-gray-700 whitespace-pre-line'>
+                  {description}
+                </p>
               </div>
               <div>
                 <Swiper

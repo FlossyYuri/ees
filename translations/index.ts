@@ -96,35 +96,27 @@ export const en = {
 
   home: 'Home',
   news: 'News',
+  news1: 'Our News',
   products: 'Products',
   aboutUs: 'About Us',
   contacts: 'Contacts',
   carousel: {
     item1: {
-      title: `We illuminate and develop Mozambique.`,
-      subtitle: `A
-      Mozambican company servicing rural communities selling Solar Home Systems,
-      offering Cooling as a Service solutions (CaaS) and
-      can propose off grid power solutions in partnership with local
-      installation companies.`,
+      title: `Off grid power solutions`,
       box: {
         title: 'Our Mission',
         text: 'Provide competitive, sustainable, and reliable solutions to both our off grid and on grid clients.',
       },
     },
     item2: {
-      title: `Off grid power solutions`,
-      subtitle: `offering Cooling as a Service solutions (CaaS) and
-      can propose off grid power solutions in partnership with local
-      installation companies.`,
+      title: `We illuminate and developed Mozambique with Paygo solutions`,
       box: {
         title: 'Our Vision',
         text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',
       },
     },
     item3: {
-      title: `Pay as you Go basis.`,
-      subtitle: `Offering pay as you go basis (PAYGO)`,
+      title: `Invest in C&I (micro-generation and autonomous systems)`,
       box: {
         title: 'Our Values',
         text: 'We are locals and committed to deliver the best service.',
@@ -132,7 +124,6 @@ export const en = {
     },
     item4: {
       title: `Irrigation and solar supply in support for agriculture`,
-      subtitle: `Offering a payment base according to use (Paygo)`,
       box: {
         title: 'Our Vision',
         text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',
@@ -142,9 +133,9 @@ export const en = {
   productsList: {
     item1: {
       title: 'Solar Home Systems',
-      description: `Epsilon Energia Solar offers energy solutions, such as low-cost Residential Solar Systems in CASH or PAYGO payment models. We have entry-level equipment (50 lumens) up to 12W solutions with 5 lamps.
-      Currently with +12,000 units sold in Mozambique and a distribution and installation network in 4 provinces, we are the largest Mozambican operator selling Residential Solar Systems.
-      We work directly with the best brands of certified products on the market, guaranteeing our customers up to 2 years after the sale of the equipment.
+      description: `Epsilon Energia Solar offers energy solutions, such as low-cost Residential Solar Systems in CASH or PAYGO payment models. We have entry-level equipment (50 lumens) up to 12W solutions with 5 lamps.\n
+      Currently with +12,000 units sold in Mozambique and a distribution and installation network in 4 provinces, we are the largest Mozambican operator selling Residential Solar Systems.\n
+      We work directly with the best brands of certified products on the market, guaranteeing our customers up to 2 years after the sale of the equipment.\n
       We are present in several programs to support offgrid rural electrification in Mozambique, such as AECF, BRILHO, FAZER and SUSTENTA bio.
       `,
     },
@@ -188,13 +179,13 @@ export const en = {
     },
     item3: {
       name: 'Cedrick Lemarie',
-      title: 'Acionista e Presidente do Conselho de Administração.',
+      title: 'Shareholder and Executive Chairman of the Board.',
       description:
         'With more than 25 years of experience in the energy sector, Cedrick Lemarie has been working on developing IPP projects, B2B and B2C energy related projects at ENGIE and with the Brazilian mining group Vale where he was in charge of energy projects for the EMEA region. Cedrick is a business angel in the energy start up ROAM (electric mobility) and oversaw business development for the ENGIE Group in Eastern Africa before joining Epsilon Energia Solar. As such he has developed the strategy of the group to enter new countries in the region and look for potential partners and acquisitions. Cedrick holds a master’s degree from Paris Dauphine (France), Edith Cowan University (Australia) and Fundacao Getulio Vargas (Brazil). He is a French and Mozambican national.',
     },
     item4: {
       name: 'Mdungaze Rebelo',
-      title: 'Representante do acionista Epsilon Investimentos SA',
+      title: 'Representing Epsilon Investimentos',
       description:
         'Mdungaze Rebelo is Épsilon’s Vice-President and has been with the company since its inception in 2007. Mr. Rebelo oversees the real estate development projects and is the focal point for some of Epsilon’s key partnerships and clients, in particular Tier 1 and Tier 2 Service Providers to Rovuma LNG projects. He has over 12 years of experience developing projects in Mozambique’s complex business, operational and legal environment and dealing with procurement and local authorities. He is a certified Architect & Urban Planner (Universidade Federal do Paraná - Brasil) and worked as an architect with Jose Forjaz Arquitectos, prior to joining Epsilon. He also holds an MBA from the prestigious University of Cape Town’s Graduate School of Business.',
     },
@@ -295,12 +286,13 @@ export const pt = {
 
   home: 'Home',
   news: 'Notícias',
+  news1: 'Nossas Notícias',
   products: 'Produtos',
   aboutUs: 'Sobre nós',
   contacts: 'Contactos',
   carousel: {
     item1: {
-      title: `Iluminamos e desenvolvemos Moçambique`,
+      title: `Criamos soluções de armazenamento de frio Off Grid`,
       box: {
         title: 'Nossa missão',
         text: 'Fornecer soluções competitivas, sustentáveis e confiáveis para os nossos clientes off-grid e on-grid.',
@@ -308,7 +300,6 @@ export const pt = {
     },
     item2: {
       title: `Iluminamos e desenvolvemos Moçambique com soluções em PAYGO`,
-      subtitle: `Criamos soluções de armazenamento em Frio Off grid.`,
       box: {
         title: 'Nossa Visão',
         text: 'Acelerar o acesso e uso generalizado de energia limpa em Moçambique, melhorando a qualidade de vida e o potencial económico das comunidades.',
@@ -316,7 +307,6 @@ export const pt = {
     },
     item3: {
       title: `Aposta no C&I (micro-geração e sistemas autónomos)`,
-      subtitle: `Aposta no C&I (micro geração e sistemas autónomos)`,
       box: {
         title: 'Nossos Valores',
         text: 'Somos locais e comprometidos em oferecer o melhor serviço.',
@@ -324,7 +314,6 @@ export const pt = {
     },
     item4: {
       title: `Irrigação e abastecimento solar no apoio à agricultura`,
-      subtitle: `Irrigação e abastecimento solar no apoio à agricultura`,
       box: {
         title: 'Nossa Visão',
         text: 'Acelerar o acesso e uso generalizado de energia limpa em Moçambique, melhorando a qualidade de vida e o potencial económico das comunidades.',
@@ -393,9 +382,10 @@ export const pt = {
     },
     item5: {
       name: 'Gregor Binkert',
-      title: 'Shareholder',
-      description:
-        'Gregor Binkert é CEO da BD Consulting & Investment Ltd na Suíça, developer de parques industriais e projetos de energia em África e na América Latina. Também presta serviços de consultoria em desenvolvimento institucional, Parcerias Público-Privadas e investimentos de impacto social. Os clientes incluem Boston Consulting Group e Bain Consulting. O Sr. Binkert é o Presidente do Conselho da Monter Capital Partnership com escritórios na Zâmbia e nas Maurícias, um investidor diversificado de capital privado e gestor de ativos, e um Diretor Não-Executivo Independente do Emerging Africa Capital Group, uma empresa de serviços financeiros e investimento de impacto na Nigéria. É também Administrador da MozParks, holding de parques industriais e agro-parques em Moçambique que inclui o Parque Industrial de Beluluane, o principal parque industrial do país, e Administrador da Epsilon Energia Solar. ',
+      title: 'Acionista',
+      description: `
+        Gregor Binkert é CEO da BD Consulting & Investment Ltd na Suíça, developer de parques industriais e projetos de energia em África e na América Latina. Também presta serviços de consultoria em desenvolvimento institucional, Parcerias Público-Privadas e investimentos de impacto social. Os clientes incluem Boston Consulting Group e Bain Consulting.
+        O Sr. Binkert é o Presidente do Conselho da Monter Capital Partnership com escritórios na Zâmbia e nas Maurícias, um investidor diversificado de capital privado e gestor de ativos, e um Diretor Não-Executivo Independente do Emerging Africa Capital Group, uma empresa de serviços financeiros e investimento de impacto na Nigéria. É também Administrador da MozParks, holding de parques industriais e agro-parques em Moçambique que inclui o Parque Industrial de Beluluane, o principal parque industrial do país, e Administrador da Epsilon Energia Solar.`,
     },
   },
   contactsPage: {
