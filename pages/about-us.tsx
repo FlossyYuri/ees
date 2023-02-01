@@ -6,6 +6,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Footer from '../components/layout/Footer';
 import Header from '../components/layout/Header';
+import MissionLogo from '../assets/image/home/slider-box1.png';
+import VisionLogo from '../assets/image/home/slider-box2.png';
+import ValueLogo from '../assets/image/home/slider-icon1.png';
 import { MEMBERS } from '../data';
 import useTranslation from '../hooks/useTranslation';
 
@@ -21,7 +24,51 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <h2 className='text-center font-bold text-4xl mt-24 mb-24 text-gray-700'>
+        <section className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 container mx-auto mt-24'>
+          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
+            <Image
+              className='filter brightness-0'
+              height={84}
+              src={MissionLogo}
+              alt='BG1'
+            />
+            <h2 className='text-xl my-4 font-bold'>
+              {t.aboutSection.mission.title}
+            </h2>
+            <p className='text-center text-gray-400 mb-4'>
+              {t.aboutSection.mission.text}
+            </p>
+          </article>
+          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
+            <Image
+              className='filter brightness-0'
+              height={84}
+              src={VisionLogo}
+              alt='BG1'
+            />
+            <h2 className='text-xl my-4 font-bold'>
+              {t.aboutSection.vision.title}
+            </h2>
+            <p className='text-center text-gray-400 mb-4'>
+              {t.aboutSection.vision.text}
+            </p>
+          </article>
+          <article className='bg-white rounded-lg p-8 mx-auto flex flex-col items-center relative carousel-card max-w-xs'>
+            <Image
+              className='filter brightness-0'
+              height={84}
+              src={ValueLogo}
+              alt='BG1'
+            />
+            <h2 className='text-xl my-4 font-bold'>
+              {t.aboutSection.values.title}
+            </h2>
+            <p className='text-center text-gray-400 mb-4'>
+              {t.aboutSection.values.text}
+            </p>
+          </article>
+        </section>
+        <h2 className='text-center font-bold text-4xl my-16 text-gray-700'>
           {t.members.title}
         </h2>
         <section className='flex flex-col container mx-auto gap-8 mb-24'>
@@ -41,38 +88,9 @@ export default function Home() {
                     {member.name}
                   </p>
                   <p className='text-gray-400'>{member.title}</p>
-                  <p className='text-gray-400 mt-4 text-justify'>
+                  <p className='text-gray-400 mt-4 text-justify whitespace-pre-line'>
                     {member.description}
                   </p>
-                </div>
-              </div>
-              <div
-                key={member.name}
-                className={`fixed z-10 h-screen w-screen bg-black p-8 top-0 left-0 bg-opacity-25 flex items-center justify-center ${
-                  modals[index] ? '' : 'hidden'
-                }`}
-              >
-                <div className='bg-white max-w-2xl max-h-96 md:max-h-screen overflow-y-auto rounded-2xl relative'>
-                  <div className='flex flex-col p-12 items-center'>
-                    <button
-                      onClick={() =>
-                        setModals({ ...modals, [index]: !modals[index] })
-                      }
-                      className='w-10 h-10 bg-main rounded-xl absolute right-6 top-6 text-white'
-                    >
-                      <span className='truncate'>X</span>
-                    </button>
-                    <Image
-                      className='rounded-2xl hidden md:flex w-min h-44 object-contain overflow-hidden'
-                      src={member.image}
-                      alt='hello'
-                    />
-                    <p className='font-semibold text-gray-700 text-xl'>
-                      {member.name}
-                    </p>
-                    <p className='text-gray-400'>{member.title}</p>
-                    <p className='text-gray-600 mt-4'>{member.description}</p>
-                  </div>
                 </div>
               </div>
             </>
