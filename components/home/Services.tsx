@@ -27,7 +27,7 @@ export default function Services() {
       <div className='container grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto'>
         <article>
           <h3 className='text-main font-semibold'>{t.services.title}</h3>
-          <h2 className='font-bold text-4xl mb-8 max-w-sm'>
+          <h2 className='font-bold text-4xl mb-8 text-left max-w-sm'>
             {t.services.description}
           </h2>
         </article>
