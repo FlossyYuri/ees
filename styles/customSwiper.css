@@ -36,6 +36,12 @@ section.swipper-container img {
   .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 0px;
 }
+@media (max-width: 768px) {
+  .brand .swiper.swiper-initialized.swiper-horizontal.swiper-ios {
+    height: 150px;
+  }
+}
+
 .services .swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events {
   padding-bottom: 40px;
 }

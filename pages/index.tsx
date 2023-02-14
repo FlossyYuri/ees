@@ -32,7 +32,7 @@ export default function Home({ articles }: Props) {
       <Header />
       <main>
         <MainCarousel />
-        <section className='grid grid-cols-1 md:grid-cols-3 container mx-auto mt-24 gap-8'>
+        <section className='grid grid-cols-1 md:grid-cols-3 container mx-auto mt-24 gap-y-8 md:gap-x-8'>
           <article className='rounded-2xl overflow-hidden'>
             <Image
               className='rounded-2xl h-full object-cover'
