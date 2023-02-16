@@ -39,7 +39,7 @@ export default function News({ articles }: Props) {
               createdAt={article.createdAt}
               image={article.image}
               description={article.description}
-              tag='Solar Modules, Solar PV'
+              tag={article.tag}
               title={article.title}
             />
           ))}

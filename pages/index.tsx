@@ -70,7 +70,7 @@ export default function Home({ articles }: Props) {
                 createdAt={article.createdAt}
                 image={article.image}
                 description={article.description}
-                tag='Solar Modules, Solar PV'
+                tag={article.tag}
                 title={article.title}
               />
             ))}

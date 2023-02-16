@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import useTranslation from '../../hooks/useTranslation';
+import { substringWithCompleteWord } from '../../utils';
 
 export interface ArticleProps {
   image: string | StaticImageData;
@@ -42,7 +43,9 @@ export default function ArticleCard({
           <span>{new Date(createdAt).toLocaleDateString('pt-BR')}</span>
           <span>{author}</span>
         </div>
-        <p className='text-gray-500'>{description}</p>
+        <p className='text-gray-500'>
+          {substringWithCompleteWord(description)}
+        </p>
         <Link
           className='border-2 border-gray-500 flex items-center gap-2 truncate w-min rounded px-4 py-2 mt-4'
           href={`/news/${id}`}

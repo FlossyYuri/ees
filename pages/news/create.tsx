@@ -1,26 +1,24 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { useContext, useState } from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import BG1Logo from '../../assets/image/bg1.jpg';
-import MyEditor from '../../components/Editor';
+import FileInput from '../../components/forms/FileInput';
+import Input from '../../components/forms/input';
+import SignUpModal from '../../components/forms/SignInModal';
 import Footer from '../../components/layout/Footer';
 import Header from '../../components/layout/Header';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import Input from '../../components/forms/input';
-import FileInput from '../../components/forms/FileInput';
-import { APIKit, uploadFile } from '../../service';
-import { useRouter } from 'next/router';
-import SignUpModal from '../../components/forms/SignInModal';
-import useAuthUser from '../../hooks/useAuthUser';
 import AuthContext from '../../context/authContext';
+import { APIKit, uploadFile } from '../../service';
 
 type CreateArticle = {
   title: string;
   image: string;
   tag: string;
   author: string;
-  description: any;
+  description: string;
 };
 export default function Create() {
   const router = useRouter();
@@ -30,6 +28,7 @@ export default function Create() {
   const { auth, Login }: any = useContext(AuthContext);
   const {
     register,
+    reset,
     setValue,
     getValues,
     handleSubmit,
@@ -48,7 +47,8 @@ export default function Create() {
       const toastID = toast.loading('Enviando Dados!');
       APIKit.post('/articles', values)
         .then((response) => {
-          toast.success('Notícia cadastrada com sucesso!');
+          toast.success('Notícia cadastrada com sucesso!', { duration: 8000 });
+          reset();
           router.push(`/news/${response.data.data.id}`);
         })
         .catch(() => {
@@ -96,7 +96,6 @@ export default function Create() {
               error={!!errors}
               helperText={errors.title?.message}
               label='Titulo da notícia'
-              placeholder='...'
             />
             <Input
               name='author'
@@ -104,7 +103,6 @@ export default function Create() {
               error={!!errors}
               helperText={errors.author?.message}
               label='Autor do artigo'
-              placeholder='...'
             />
             <Input
               name='tag'
@@ -123,7 +121,14 @@ export default function Create() {
                 value={document?.name || ''}
               />
             </div>
-            <MyEditor setValue={setValue} value={getValues().description} />
+            <Input
+              name='description'
+              register={register}
+              error={!!errors}
+              helperText={errors.description?.message}
+              label='Corpo da notícia'
+              textarea
+            />
             <div className='mt-4'>
               <input
                 disabled={loading}

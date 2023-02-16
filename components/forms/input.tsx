@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from 'react';
+import { InputHTMLAttributes, TextareaHTMLAttributes } from 'react';
 import { UseFormRegister } from 'react-hook-form';
 
 interface Props extends InputHTMLAttributes<HTMLInputElement> {
@@ -7,6 +7,7 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   description?: string;
   error?: boolean;
+  textarea?: boolean;
   helperText?: string;
 }
 
@@ -18,6 +19,7 @@ const Input = ({
   helperText,
   description,
   type = 'text',
+  textarea = false,
   ...rest
 }: Props): JSX.Element => {
   return (
@@ -25,12 +27,21 @@ const Input = ({
       {label ? (
         <label className='input-label text-slate-600'>{label}</label>
       ) : null}
-      <input
-        className='border border-gray-200 rounded px-4 py-2 bg-slate-100 placeholder-gray-400 focus:border-main-dark focus:ring-0 ring-0'
-        type={type}
-        {...register(name, { required: true })}
-        {...rest}
-      />
+      {textarea ? (
+        <textarea
+          className='border border-gray-200 rounded px-4 py-2 bg-slate-100 placeholder-gray-400 focus:border-main-dark focus:ring-0 ring-0'
+          {...register(name, { required: true })}
+          rows={5}
+        ></textarea>
+      ) : (
+        <input
+          className='border border-gray-200 rounded px-4 py-2 bg-slate-100 placeholder-gray-400 focus:border-main-dark focus:ring-0 ring-0'
+          type={type}
+          {...register(name, { required: true })}
+          {...rest}
+        />
+      )}
+
       {description && (
         <span className='text-slate-500 text-sm'>{description}</span>
       )}
