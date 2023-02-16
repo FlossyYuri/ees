@@ -55,5 +55,6 @@ export async function getStaticProps() {
     props: {
       articles: JSON.parse(JSON.stringify(articles)),
     }, // will be passed to the page component as props
+    revalidate: 60,
   };
 }

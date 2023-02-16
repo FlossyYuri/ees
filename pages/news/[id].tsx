@@ -82,6 +82,7 @@ export async function getStaticProps({ params }: any) {
         (element: any) => element.id.toString() === params.id
       ),
     }, // will be passed to the page component as props
+    revalidate: 60,
   };
 }
 export async function getStaticPaths() {
