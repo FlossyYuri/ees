@@ -5,29 +5,10 @@ export const en = {
   },
   aboutSection: {
     title:
-      'Transform lives and unlock the potential by providing access to essential products and services in Mozambique',
-    p1: `Less than 30% of Mozambique population has access to
-      electricity, this creates a tremendous need for off grid
-      renewable energy solutions for lighting houses and powering home
-      appliances like TVs, radios and fans; water pumps for rural
-      irrigation and drinking water; cold storage and power solutions
-      for schools, health, off grid administrative centers and remote
-      commercial activities.`,
-    p2: `Initially, the company was set up to sell Solar Home Systems on
-      a Pay as you Go basis (PAYGO). Over the years, EES has
-      successfully expanded the range of products offered to include
-      turnkey productive use solutions (cold rooms, Solar water pumps
-      for drinking and irrigation water) and off grid turnkey power
-      solutions in partnership with local installation companies on an
-      EPC or leasing solution. EES is also exploring Electric Mobility
-      solutions.`,
-    p3: `Epsilon Energia Solar (EES) was incorporated in 2018 under the
-      company’s Act of Mozambique to serve rural communities by
-      increasing their access to affordable sources of energy. With
-      its headquarters in Maputo, EES is mainly active in the central
-      region of the country with 3 regional delegations in Chimoio
-      (Manica and Sofala Provinces), Tete (Tete Province) and Gurue
-      (Zambezia Province).`,
+      'Transform lives and unlock development by providing access to essential products and services in Mozambique',
+    p1: `Less than 30% of Mozambique population has access to electricity, this creates a tremendous need for off grid renewable energy solutions for lighting houses and powering home appliances like TVs, radios and fans; water pumps for rural irrigation and drinking water; cold storage and power solutions for schools, health, off grid administrative centers and remote commercial activities.`,
+    p2: `Initially, the company was set up to sell Solar Home Systems on a Pay as you Go basis (PAYGO). Over the years, EES has successfully expanded the range of products offered to include turnkey productive use solutions (cold rooms, Solar water pumps for drinking and irrigation water) and off grid turnkey power solutions in partnership with local installation companies on an EPC or leasing solution. EES is also exploring Electric Mobility solutions.`,
+    p3: `Epsilon Energia Solar (EES) was incorporated in 2018 under the company’s Act of Mozambique to serve rural communities by increasing their access to affordable sources of energy. With its headquarters in Maputo, EES is mainly active in the central region of the country with 3 regional delegations in Chimoio (Manica and Sofala Provinces), Tete (Tete Province) and Gurue (Zambezia Province).`,
     button: 'Read more',
     button2: 'Read less',
     mission: {
@@ -45,27 +26,25 @@ export const en = {
   },
   services: {
     title: 'Sustainable, reliable and affordable energy!',
-    description: `We provide value to our customers through products and continuous innovation.`,
-    description2: `Epsilon Solar Energy has an expanding network of customers
-    distributed by 4 provinces, offering them a variety of
-    Energy products and solutions.`,
+    description: `We provide value to our customers with competitive products supply and continuous innovation.`,
+    description2: `Epsilon Solar Energy has an expanding portfolio of customers distributed in 4 provinces, offering them a variety of Energy products and solutions.`,
     get: 'Get Started',
     item1: {
       title: 'Solar Home Systems',
       content:
-        'Epsilon Solar Energy offers energy solutions, such as low -cost residence systems in Cash or Paygo payment models.We have input range equipment (50 lumens) to 12W solutions with 5 lamps.',
+        'Epsilon Energia Solar offers energy solutions, such as low-cost Residential Solar Systems in CASH or PAYGO payment models. We have entry-level equipment (50 lumens) up to 12W solutions with 5 lamps.',
     },
     item2: {
       title: 'Solar pumps',
       content: `We design and install submersible and high quality surface pump systems, always fed from renewable energy sources.Submersible pumps are ideal for capturing holes water, while surface pumps can be used as pool circulation pumps.`,
     },
     item3: {
-      title: 'KoolBoks fridge',
-      content: `We developed the product through your needs, off grid cold systems can be the solution of your business`,
+      title: 'Off grid cold rooms solutions',
+      content: `We design, procure and install the cold room required for the specific needs of the community or individual and business farms. Currently in our portfolio, we installed a Cold Room for the refrigeration of agricultural products in Sussundenga in the Province of Manica. This cold room was developed for a storage capacity of 30m3, reaches up to 6 degrees, with a power of 8kWp. `,
     },
     item4: {
-      title: 'Autonomous systems',
-      content: `The solar autonomous equipment is very competitive, silent, non -polluting and simple to install is turned off or connected to the power grid.`,
+      title: 'Off Grid and On Grid power solutions',
+      content: `Solar equipment is now very competitive, silent, non-polluting and simple to install anywhere whether off or on grid. Epsilon Energia Solar can design, install and operate turnkey solutions to generate solar energy to clients off or on grid.`,
     },
   },
   recentNews: {
@@ -90,7 +69,7 @@ export const en = {
       location: 'Road EN103 (in front of the fish market), Gurué Village',
     },
     contact4: {
-      location: 'St. Frente da Libertação nº 355, Maputo',
+      location: 'St. FIPAG, Gito building, 1º step – Tete',
     },
   },
 
@@ -102,28 +81,28 @@ export const en = {
   contacts: 'Contacts',
   carousel: {
     item1: {
-      title: `Off grid power solutions`,
+      title: `Solar pumps for water irrigation and potable water.`,
       box: {
         title: 'Our Mission',
         text: 'Provide competitive, sustainable, and reliable solutions to both our off grid and on grid clients.',
       },
     },
     item2: {
-      title: `We illuminate and developed Mozambique with Paygo solutions`,
+      title: `Off Grid cold room solutions.`,
       box: {
         title: 'Our Vision',
         text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',
       },
     },
     item3: {
-      title: `Invest in C&I (micro-generation and autonomous systems)`,
+      title: `Off Grid and On Grid power solutions.`,
       box: {
         title: 'Our Values',
         text: 'We are locals and committed to deliver the best service.',
       },
     },
     item4: {
-      title: `Irrigation and solar supply in support for agriculture`,
+      title: `Bringing light and development with our PAYGO Solar Home Systems.`,
       box: {
         title: 'Our Vision',
         text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',
@@ -153,13 +132,14 @@ export const en = {
       description: `We develop the product according to your needs, off grid cold systems can be the solution for your business.
       Currently in our portfolio, we installed a Cold Room for the refrigeration of agricultural products in Sussundenga in the Province of Manica. This cold room was developed for a storage capacity of 30m3, reaches up to 6 degrees, with a power of 8kWp.
       There are 3 more cold rooms in progress in the Sussundenga district with similar characteristics to the SUSTENTA bio programme.
+      Some of these cold rooms are going to be operated on a Cooling as a Service base to help the community access its services.
       `,
     },
     item4: {
-      title: 'Systemas Autonomous',
+      title: 'Off Grid and On Grid power solutions',
       description: `Solar equipment are very competitive, silent, non-polluting and simple to install anywhere whether off or on grid.
       Epsilon Energia Solar can design, install and operate turnkey solutions to generate solar energy to clients off or on grid.
-      Leasing solutions can also be studied depending in the client financial profile.
+      Leasing solutions can also be studied depending in the client financial profile. The company is also distributing solar equipment in Mozambique.
       `,
     },
   },
@@ -214,9 +194,9 @@ export const pt = {
   aboutSection: {
     title:
       'Transformar vidas e desbloquear o potencial ao fornecer acesso a produtos e serviços essenciais em Moçambique',
-    p1: `Menos de 40% da população em Moçambique tem acesso à eletricidade, o que cria uma enorme necessidade de soluções de energias renováveis fora da rede para iluminação de casas e eletrodomésticos como TVs, rádios e ventiladores; bombas de água para irrigação rural e água potável; armazenamento a frio e soluções de energia para escolas,  centros de saúde, postos administrativos fora da rede e atividades comerciais remotas.`,
-    p2: `Inicialmente, a empresa foi criada para vender Sistemas Solares Residenciais  numa base de Pay as you Go (PAYGO). Ao longo dos anos, a EES expandiu com sucesso a gama de produtos oferecidos incluindo soluções de Uso Produtivo chave na mão (câmaras frigoríficas, bombas solares para água potável e irrigação) e soluções de energia fora da rede “turn key” em parceria com empresas locais de instalação. A EES também está atualmente a explorar soluções de Mobilidade Elétrica.`,
-    p3: `A Epsilon Energia Solar (EES), empresa Moçambicana foi constituída em 2018 para servir as comunidades rurais, aumentando o acesso a fontes de energia acessíveis. Com sede em Maputo, a EES desenvolve a sua actividade principalmente na região centro do país com 3 delegações regionais, Chimoio (províncias de Manica e Sofala), Tete (província de Tete) e Gurué (província de Zambézia).`,
+    p1: `Menos de 40% da população em Moçambique tem acesso à eletricidade, o que cria uma enorme necessidade de soluções de energias renováveis fora da rede para iluminação de casas e eletrodomésticos como TVs, rádios e ventiladores; bombas de água para irrigação rural e água potável; armazenamento a frio e soluções de energia para escolas, centros de saúde, postos administrativos fora da rede e atividades comerciais remotas.`,
+    p2: `Inicialmente, a empresa foi criada para vender Sistemas Solares Residenciais numa base de Pay as you Go (PAYGO), mas ao longo dos anos expandiu com sucesso a sua gama de produtos incluindo soluções de uso produtivo chave na mão (câmaras frigoríficas, bombas solares para água potável e irrigação) e soluções de energia fora da rede “turn key” em parceria com empresas locais de instalação. Atualmente está a explorar soluções de Mobilidade Elétrica.`,
+    p3: `A Epsilon Energia Solar (EES) é uma empresa Moçambicana constituída em 2018 para servir as comunidades rurais, aumentando o acesso a fontes de energia acessíveis. Com sede em Maputo, a EES desenvolve a sua actividade principalmente na região centro do país, operando com 3 delegações regionais, Chimoio (províncias de Manica e Sofala), Tete (província de Tete) e Gurué (província de Zambézia).`,
     button: 'Ler mais',
     button2: 'Ler menos',
     mission: {
@@ -280,7 +260,7 @@ export const pt = {
       location: 'Estrada EN103 (em frente ao mercado de peixe), Vila do Gurué',
     },
     contact4: {
-      location: 'Rua Frente da Libertação nº 355, Maputo',
+      location: 'Rua do FIPAG, edifício Gito, 1º andar – Tete',
     },
   },
 

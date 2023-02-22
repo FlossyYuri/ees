@@ -69,9 +69,6 @@ export default function Footer() {
               <p className='text-3xl'>
                 +258 <span className='text-white'>84 666 4430</span>
               </p>
-              <p className='text-main font-semibold mb-4'>
-                Email: geral@epsilonenergia.co.mz
-              </p>
               <p>{t.footer.contact2.location}</p>
               <a
                 href='https://goo.gl/maps/aDe9zcQ6zp6GVBgD7'
@@ -99,9 +96,6 @@ export default function Footer() {
               <p className='text-3xl'>
                 +258 <span className='text-white'>86 300 2395</span>
               </p>
-              <p className='text-main font-semibold mb-4'>
-                Email: geral@epsilonenergia.co.mz
-              </p>
               <p>{t.footer.contact3.location}</p>
               <a
                 href='https://goo.gl/maps/aDe9zcQ6zp6GVBgD7'
@@ -128,9 +122,6 @@ export default function Footer() {
               </p>
               <p className='text-3xl'>
                 +258 <span className='text-white'>86 416 0563</span>
-              </p>
-              <p className='text-main font-semibold mb-4'>
-                Email: geral@epsilonenergia.co.mz
               </p>
               <p>{t.footer.contact4.location}</p>
               <a
