@@ -81,14 +81,14 @@ export const en = {
   contacts: 'Contacts',
   carousel: {
     item1: {
-      title: `Solar pumps for water irrigation and potable water.`,
+      title: `Off Grid cold room solutions.`,
       box: {
         title: 'Our Mission',
         text: 'Provide competitive, sustainable, and reliable solutions to both our off grid and on grid clients.',
       },
     },
     item2: {
-      title: `Off Grid cold room solutions.`,
+      title: `Bringing light and development with our PAYGO Solar Home Systems.`,
       box: {
         title: 'Our Vision',
         text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',
@@ -102,7 +102,7 @@ export const en = {
       },
     },
     item4: {
-      title: `Bringing light and development with our PAYGO Solar Home Systems.`,
+      title: `Solar pumps for water irrigation and potable water.`,
       box: {
         title: 'Our Vision',
         text: 'Accelerate the widespread access and use of clean energy in Mozambique, improving the quality of life and the economic potential of communities.',

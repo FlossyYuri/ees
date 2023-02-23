@@ -15,8 +15,8 @@ export default function News({ article }: Props) {
   return (
     <div className='w-full bg-gray-100'>
       <Head>
-        <title>Contacts</title>
-        <meta name='description' content='Contacts' />
+        <title>{article.title}</title>
+        <meta name='description' content={article.description} />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
@@ -85,13 +85,19 @@ export async function getStaticProps({ params }: any) {
     revalidate: 60,
   };
 }
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }: any) {
   const articlesList = await Article.findAll();
   const articles = JSON.parse(JSON.stringify(articlesList));
+  const paths = articles
+    .map((item: any) =>
+      locales.map((locale: any) => ({
+        params: { id: item.id.toString() },
+        locale,
+      }))
+    )
+    .flat();
   return {
-    paths: articles.map((item: any) => ({
-      params: { id: item.id.toString() },
-    })),
+    paths,
     fallback: false, // can also be true or 'blocking'
   };
 }
