@@ -92,19 +92,19 @@ export const PRODUCTS = (t: any) => ({
 
 export const MEMBERS = (t: any) => [
   {
-    image: Member1,
+    image: Member3,
     name: t.members.item1.name,
     title: t.members.item1.title,
     description: t.members.item1.description,
   },
   {
-    image: Member2,
+    image: Member1,
     name: t.members.item2.name,
     title: t.members.item2.title,
     description: t.members.item2.description,
   },
   {
-    image: Member3,
+    image: Member2,
     name: t.members.item3.name,
     title: t.members.item3.title,
     description: t.members.item3.description,
