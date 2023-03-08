@@ -149,7 +149,7 @@ export const en = {
       name: 'Cedrick Lemarie',
       title: 'Executive Chairman of the Board and Shareholder',
       description:
-        'With more than 25 years of experience in the energy sector, Cedrick Lemarie has been working on developing IPP projects, B2B and B2C energy related projects at ENGIE and with the Brazilian mining group Vale where he was in charge of energy projects for the EMEA region. Cedrick is a business angel in the energy start up ROAM (electric mobility) and oversaw business development for the ENGIE Group in Eastern Africa before joining Epsilon Energia Solar.',
+        'With more than 25 years of experience in the energy sector, Cedrick Lemarie has been working on developing IPP projects, B2B and B2C energy related projects at ENGIE and with the Brazilian mining group Vale where he was in charge of energy projects for the EMEA region. Cedrick is a business angel in the energy start up and oversaw business development for the ENGIE Group in Eastern Africa before joining Epsilon Energia Solar.',
     },
     item2: {
       name: 'Paulo Raposeiro',
@@ -340,7 +340,7 @@ export const pt = {
       name: 'Cedrick Lemarie',
       title: 'Presidente do Conselho de Administração e Acionista',
       description:
-        'Com mais de 25 anos de experiência no setor de energia, Cedrick Lemarie tem trabalhado no desenvolvimento de projetos IPP, projetos B2B e B2C relacionados à energia na ENGIE e no grupo de mineração brasileiro Vale, onde foi responsável por projetos de energia para a região EMEA. Cedrick é um business angel na startup de energia ROAM (mobilidade elétrica) e supervisionou o desenvolvimento de negócios para o Grupo ENGIE na África Oriental antes de ingressar na Epsilon Energia Solar.',
+        'Com mais de 25 anos de experiência no setor de energia, Cedrick Lemarie tem trabalhado no desenvolvimento de projetos IPP, projetos B2B e B2C relacionados à energia na ENGIE e no grupo de mineração brasileiro Vale, onde foi responsável por projetos de energia para a região EMEA. Cedrick é um business angel na startup de energia e supervisionou o desenvolvimento de negócios para o Grupo ENGIE na África Oriental antes de ingressar na Epsilon Energia Solar.',
     },
     item2: {
       name: 'Paulo Raposeiro',
