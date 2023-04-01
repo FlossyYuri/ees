@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const REQUEST_TIMEOUT = 90 * 1000;
 export const APIKit = axios.create({
-  baseURL: 'http://localhost:3000/api',
+  baseURL: process.env.API_URL,
   timeout: REQUEST_TIMEOUT,
 });
 
