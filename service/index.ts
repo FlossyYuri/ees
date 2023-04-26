@@ -3,7 +3,7 @@ import axios from 'axios';
 export const REQUEST_TIMEOUT = 90 * 1000;
 
 export const APIKit = axios.create({
-  baseURL: 'https://www.epsilonenergia.co.mz/api',
+  baseURL: 'http://localhost:3000/api',
   timeout: REQUEST_TIMEOUT,
 });
 

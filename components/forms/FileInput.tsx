@@ -28,7 +28,9 @@ const FileInput = ({
   };
   return (
     <label className=''>
-      {isImage && <Image src={file || initial} alt='Logo' />}
+      {isImage && (
+        <Image src={file || initial} alt='Logo' width={200} height={200} />
+      )}
       <input
         className='hidden'
         name={name}
